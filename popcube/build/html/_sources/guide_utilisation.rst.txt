@@ -1,0 +1,167 @@
+
+.. _goconvey : https://github.com/smartystreets/goconvey
+
+Comment se connecter ?
+===========================
+
+Installer VPDesk
+-----------------
+
+VPDesk est le lanceur de l'application visual planning.
+
+Pour le télécharger rendez vous ici : https://www.visual-planning.com/fr/accueil-espace-client/espace-clients-vpdesk
+
+Téléchargez la version windows et exécutez le fichier.
+
+Compte
+------
+
+Votre identifiant est composé de la façon suivante : ::
+
+    Première lettre du prénom + Nom
+
+Lors de votre première connexion laissez votre mot de passe vide, visual planning vous demandera d'en définir un pour votre compte.
+
+Le mot de passe doit être composé de : ::
+
+    - Une lettre
+    - Un chiffre
+    - Au moins 4 caractères
+
+.. note::
+    Ce mot de passe n'a pas besoin d'être modifié.
+
+.. warning::
+    Si vous n'avez pas encore de compte visual planning ou que vous ne vous souvenez plus de votre mot de passe contactez : vp.support@etf.fr
+
+
+Choisir son planning
+===========================
+
+Lors de votre première connexion visual planning vous demandera de sélectionner un planning. Sélectionnez le planning de votre choix.
+
+.. note::
+        - ETF_OFFICIEL_V3 :
+            - Planification de ressources (Personnel, Matériel)
+            - Gestion des habilitations
+            - Gestion des formations
+        - ETF_RAPPORT_V3 :
+            - Rapport soudure et meulage
+            - Plan de veille et gestion des KNs
+
+.. warning::
+    Les autres planning sont des plannings de test et de développement. Aucune données ne pourra être récupérée de ces plannings
+
+Que faire une fois connecté ?
+===============================
+
+Une fois la barre de chargement disparu, vous devez demander à Visual Planning de vous afficher des données. 
+
+Se déplacer dans les différents affichages
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Installez `git`, `docker` et `docker-compose`
+* Récupérer le code source du projet : `git clone git@github.com:titouanfreville/{REPO}.git || git clone https://github.com/titouanfreville/{REPO}.git`
+* Aller dans le dossier obtenu
+* `docker-compose up`
+
+Filtrer les données
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Créer une issue sur github contenant un nom (résumant le travail à faire) et l'intégralité de la feature (ex : Nom : HELLO WORLD, Contenu : Créer une page de l'application permettant d'afficher le message : 'Hello World')
+* Signaler la création de l'application.
+* Voter et ce mettre d'accord ;)
+
+Travailler sur une issue
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Quand une feature est acceptée**
+
+* Créer une branche depuis la branche 'dévelop' nommer `issue-Numéro_de_l'issue-Nom`
+* Créer les test unitaires liés à l'issue si non existant
+* Faite votre feature
+* Tester (lancer les test unitaires, etc.)
+* Ouvrir une pull request de votre branche vers master
+
+Format de commit
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* ajouter le template de commit a la configuration git. `git config commit.template {Clone_ROOT}/.git_commit_message.txt`
+* Un commit doit contenir : le numéro de l'issue (requis), un résumé du travail réaliser(requis), un détails du travail réalisé, la liste de ce qu'il reste à faire, un ping sur les différentes personne concerné par l'issue.
+
+Finir une issue
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Quand une feature est en Pull Request**
+
+* Une personne différente de celle ayant fait l'issue vérifie le code
+* La feature est testé et une démo doit être faite (merge sur la branche demo)
+* La PR est acceptée
+* Merge la branche dans develop
+* Tester que develop reste stable
+
+Intégration continue
+===========================
+
+
+L'intégration continue est un ensemble de pratiques, vérifier à chaque modification de code source que le résultat des modifications ne produit pas de régression dans l'application développée.
+
+
+Travis
+-------
+
+Pour faire simple, vous pouvez paramétrer Travis-CI pour qu’à chaque push, il exécute vos tests et vous indique si votre build (plusieurs "jobs") s’est bien déroulé ou non. Cela permet à chaque modification du projet, de s’assurer que tout fonctionne correctement. Cela s’appelle l’intégration continue.
+
+Chaque feature/branch est tester a chaque commit/merge
+
+Tests
+===========================
+
+Tests unitaire go
+---------------------
+
+On utilise _`goconvey`
+
+GoConvey, un outil de test Go pour les gophers.
+Utilisez-le dans le terminal ou le navigateur.
+
+Exemple web ui
+^^^^^^^^^^^^^^^^
+
+* Erreur
+
+.. image:: _static/methods/goconvey_fail.png
+
+* OK
+
+.. image:: _static/methods/goconvey_pass.png
+
+* Detail du code
+
+En rouge les zones non coverage
+
+.. image:: _static/methods/goconvey_open.png
+
+Linter
+-------
+
+L'utilitaire lint a été l'un des premiers outils d'analyse statique de code source.
+
+Il s'agit d'un outil capable de détecter les erreurs et problèmes potentiels dans votre code.
+
+* Linter pour golang
+
+https://github.com/cl3m3nt666/docker-golinter
+
+
+Test fonctionnel
+------------------
+
+Avec postman il est possible d'écrire des tests, effectué a chaque jobs travis
+
+.. image:: _static/methods/postman.png
+
+Example du fichier pour tester l'api
+
+.. literalinclude:: _static/example/ping.postman.json
+   :language: json

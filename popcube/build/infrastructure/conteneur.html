@@ -1,0 +1,339 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Conteneur &mdash; Visual Planning 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Visual Planning 0.1 documentation" href="../index.html"/>
+        <link rel="next" title="Stockage et réplication" href="storage.html"/>
+        <link rel="prev" title="Hyperviseur" href="hyperviseur.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Visual Planning
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Guide d'utilisation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guide_utilisation.html">Comment se connecter ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide_utilisation.html#choisir-son-planning">Choisir son planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide_utilisation.html#que-faire-une-fois-connecte">Que faire une fois connecté ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide_utilisation.html#integration-continue">Intégration continue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide_utilisation.html#tests">Tests</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Application</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developpement/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developpement/introduction.html#contraintes">Contraintes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developpement/fonctionalite.html">Fonctionalité</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developpement/interface.html">Interface</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Infrastructure</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html#contraintes">Contraintes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hyperviseur.html">Hyperviseur</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Conteneur</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#cluster-swarm">Cluster swarm</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#conception-decentralisee">Conception décentralisée.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modele-de-service-declaratif">Modèle de service déclaratif</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scaling">Scaling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#conciliation-de-l-etat-desire">Conciliation de l’état désiré</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reseau-multi-hote-overlay-network">Réseau multi-hôte (overlay network)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#decouverte-du-service">Découverte du service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rolling-updates">Rolling updates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#etats-du-cluster">Etats du cluster</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#storage">Storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stack">Stack</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="storage.html">Stockage et réplication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="monitoring.html">Monitoring de l’infrastucture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loadBalancing.html">Load Balancing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatisation.html">Automatisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="final.html">Vue d’ensemble</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Produit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../marketing/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../marketing/pricing.html">Comment on gagne du cash</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../marketing/to_be_continued.html">Prochainement dans PopCube</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Visual Planning</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Conteneur</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/infrastructure/conteneur.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="conteneur">
+<h1>Conteneur<a class="headerlink" href="#conteneur" title="Permalink to this headline">¶</a></h1>
+<p>Docker utilise simplement des fonctionnalités natives de Linux comme son noyau, ses LXC et cgroups</p>
+<p>Docker permet de créer des environnements (appelées containers) de manière à isoler des applications.</p>
+<p>Dans le cas de  Docker, le kernel va partager les ressources du système hôte et interagir avec le(s) container(s). Techniquement, Docker n’est pas une VM, pas le moins du monde, mais en terme d’utilisation, Docker peut-être apparenté à une VM.</p>
+<p>Comme le container n’embarque pas d’OS, à la différence de la machine virtuelle, il est par conséquent beaucoup plus léger que cette dernière. Il n’a pas besoin d’activer un second système pour exécuter ses applications. Cela se traduit par un lancement beaucoup plus rapide, mais aussi par la capacité à migrer plus facilement un container (du fait de son faible poids) d’une machine physique à l’autre. Autre avantage : les containers Docker, du fait de leur légèreté, sont portables de cloud en cloud.</p>
+<div class="section" id="cluster-swarm">
+<h2>Cluster swarm<a class="headerlink" href="#cluster-swarm" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="conception-decentralisee">
+<h3>Conception décentralisée.<a class="headerlink" href="#conception-decentralisee" title="Permalink to this headline">¶</a></h3>
+<p>Au lieu de gérer la différenciation entre les rôles de nœud au moment du déploiement, le Docker Engine gère toute spécialisation au moment de l’exécution. Vous pouvez déployer les deux types de nœuds, de MANAGER et de WORKER, en utilisant le Docker-engine.</p>
+</div>
+<div class="section" id="modele-de-service-declaratif">
+<h3>Modèle de service déclaratif<a class="headerlink" href="#modele-de-service-declaratif" title="Permalink to this headline">¶</a></h3>
+<p>Docker Engine utilise une approche déclarative pour vous permettre de définir l’état désiré des différents services dans votre stack d’applications. Par exemple, vous pouvez décrire une application composée d’un service Web front-end avec des services de mise en file d’attente de messages et d’un backend de base de données.</p>
+</div>
+<div class="section" id="scaling">
+<h3>Scaling<a class="headerlink" href="#scaling" title="Permalink to this headline">¶</a></h3>
+<p>Pour chaque service, vous pouvez déclarer le nombre de tâches que vous souhaitez exécuter. Lorsque vous augmentez ou descendez, le gestionnaire de swarm s’adapte automatiquement en ajoutant ou en supprimant des tâches pour maintenir l’état désiré.</p>
+</div>
+<div class="section" id="conciliation-de-l-etat-desire">
+<h3>Conciliation de l’état désiré<a class="headerlink" href="#conciliation-de-l-etat-desire" title="Permalink to this headline">¶</a></h3>
+<p>Le nœud manager de swarm surveille constamment l’état du cluster et réconcilie toutes les différences entre l’état actuel et l’état souhaité exprimé. Par exemple, si vous configurez un service pour exécuter 10 replica d’un conteneur, et une worker qui héberge deux de ces répliques se bloque, le manager créera deux nouvelles replica pour remplacer les replica qui se sont écrasées.</p>
+<p>Le manager Swarm attribue les nouvelles répliques aux travailleurs en cours d’exécution et disponibles.</p>
+</div>
+<div class="section" id="reseau-multi-hote-overlay-network">
+<h3>Réseau multi-hôte (overlay network)<a class="headerlink" href="#reseau-multi-hote-overlay-network" title="Permalink to this headline">¶</a></h3>
+<p>Vous pouvez spécifier un overlay network pour vos services.</p>
+<p>Le manager de swarm attribue automatiquement les adresses aux conteneurs sur le overlay network lorsqu’il initialise ou met à jour l’application.</p>
+</div>
+<div class="section" id="decouverte-du-service">
+<h3>Découverte du service<a class="headerlink" href="#decouverte-du-service" title="Permalink to this headline">¶</a></h3>
+<p>Les nœuds du manager Swarm assignent à chaque service dans swarm un nom DNS unique et les load balances exécutant des conteneurs.</p>
+<p>Vous pouvez interroger tous les conteneurs qui fonctionnent dans swarm à travers un serveur DNS intégré dans swarm.</p>
+</div>
+<div class="section" id="rolling-updates">
+<h3>Rolling updates<a class="headerlink" href="#rolling-updates" title="Permalink to this headline">¶</a></h3>
+<p>Au moment du déploiement, vous pouvez appliquer les mises à jour du service aux nœuds de façon incrémentielle.</p>
+<p>Le manager Swarm vous permet de contrôler le délai entre le déploiement du service sur différents ensembles de noeuds.</p>
+<p>Si quelque chose ne va pas, vous pouvez roll-back a la version précédente.</p>
+</div>
+<div class="section" id="etats-du-cluster">
+<h3>Etats du cluster<a class="headerlink" href="#etats-du-cluster" title="Permalink to this headline">¶</a></h3>
+<p>Exemple:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>docker@docker-01:~$ docker node ls
+ID                           HOSTNAME   STATUS  AVAILABILITY  MANAGER STATUS
+fuptalg81pxdsnpwkuewfa648    docker-02  Ready   Active        Reachable
+rsjyyzupmv8lucak1ydkp0rfl    docker-03  Ready   Active        Leader
+sjxyentbtr71eal698jv38w7c    docker-05  Ready   Drain
+xthdbocmuvdtgpuqrcyrzq9v7 *  docker-01  Ready   Active        Reachable
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="storage">
+<h2>Storage<a class="headerlink" href="#storage" title="Permalink to this headline">¶</a></h2>
+<p>Pour le stockage on utilise MINIO : <a class="reference external" href="storage.html#integration-avec-docker">expliqué dans la parti stockage</a>.</p>
+</div>
+<div class="section" id="stack">
+<h2>Stack<a class="headerlink" href="#stack" title="Permalink to this headline">¶</a></h2>
+<p>Toutes les organisations sont créée avec docker-compose <cite>v3</cite> en stack.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="storage.html" class="btn btn-neutral float-right" title="Stockage et réplication" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="hyperviseur.html" class="btn btn-neutral" title="Hyperviseur" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, ETF.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

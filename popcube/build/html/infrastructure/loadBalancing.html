@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Load Balancing &mdash; Visual Planning 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Visual Planning 0.1 documentation" href="../index.html"/>
+        <link rel="next" title="Automatisation" href="automatisation.html"/>
+        <link rel="prev" title="Monitoring de l’infrastucture" href="monitoring.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Visual Planning
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Guide d'utilisation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/guide_utilisation.html">Comment se connecter ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/guide_utilisation.html#choisir-son-planning">Choisir son planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/guide_utilisation.html#que-faire-une-fois-connecte">Que faire une fois connecté ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/guide_utilisation.html#integration-continue">Intégration continue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/guide_utilisation.html#tests">Tests</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Application</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developpement/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developpement/introduction.html#contraintes">Contraintes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developpement/fonctionalite.html">Fonctionalité</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developpement/interface.html">Interface</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Infrastructure</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html#contraintes">Contraintes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hyperviseur.html">Hyperviseur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conteneur.html">Conteneur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="storage.html">Stockage et réplication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="monitoring.html">Monitoring de l’infrastucture</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Load Balancing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#load-balancing-externe">Load Balancing externe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#load-balancing-swarm-mode-routing-mesh">Load Balancing : Swarm mode routing mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revers-proxy-load-balancing-interne">Revers proxy / Load Balancing interne</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Traefik</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="automatisation.html">Automatisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="final.html">Vue d’ensemble</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Produit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../marketing/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../marketing/pricing.html">Comment on gagne du cash</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../marketing/to_be_continued.html">Prochainement dans PopCube</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Visual Planning</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Load Balancing</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/infrastructure/loadBalancing.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="load-balancing">
+<h1>Load Balancing<a class="headerlink" href="#load-balancing" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="load-balancing-externe">
+<h2>Load Balancing externe<a class="headerlink" href="#load-balancing-externe" title="Permalink to this headline">¶</a></h2>
+<p>Le Load Balancing répartit la charge entre les adresses IP publique des différents noeud du cluster swarm sur les différents datacenters.</p>
+<img alt="infrastructure/../../_static/infrastructure/lb/external_lb.png" src="infrastructure/../../_static/infrastructure/lb/external_lb.png" />
+</div>
+<div class="section" id="load-balancing-swarm-mode-routing-mesh">
+<h2>Load Balancing : Swarm mode routing mesh<a class="headerlink" href="#load-balancing-swarm-mode-routing-mesh" title="Permalink to this headline">¶</a></h2>
+<p>Le maillage de réseau interne de Swarm permet à chaque noeud du cluster d’accepter les connexions à tout port de service publié dans swarm en acheminant toutes les demandes entrantes vers les noeuds disponibles hébergeant un service avec le port publié.</p>
+<img alt="infrastructure/../../_static/infrastructure/lb/swarm_lb.png" src="infrastructure/../../_static/infrastructure/lb/swarm_lb.png" />
+</div>
+<div class="section" id="revers-proxy-load-balancing-interne">
+<h2>Revers proxy / Load Balancing interne<a class="headerlink" href="#revers-proxy-load-balancing-interne" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://traefik.io">Traefik</a> Est un proxy HTTP inverse moderne et un équilibreur de charge conçu pour déployer des microservices avec facilité.
+Il supporte plusieurs backends (Docker, Swarm, Kubernetes, Marathon, Mesos, Consul, Etcd, Zookeeper, BoltDB, Eureka, Amazon DynamoDB, Rest API, fichier …) pour gérer sa configuration automatiquement et dynamiquement.</p>
+<img alt="infrastructure/../../_static/infrastructure/lb/internal_lb.png" src="infrastructure/../../_static/infrastructure/lb/internal_lb.png" />
+<p><a class="reference external" href="https://traefik.io">Traefik</a> écoute sur la sockets docker</p>
+<p>Selon les labels (swarm) du service, <a class="reference external" href="https://traefik.io">Traefik</a> génére automatiquement la configuration de redirections</p>
+<p>Exemple :</p>
+<div class="highlight-yaml notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="l l-Scalar l-Scalar-Plain">deploy</span><span class="p p-Indicator">:</span>
+   <span class="l l-Scalar l-Scalar-Plain">labels</span><span class="p p-Indicator">:</span>
+     <span class="l l-Scalar l-Scalar-Plain">traefik.port</span><span class="p p-Indicator">:</span> <span class="s">&quot;3000&quot;</span>
+     <span class="l l-Scalar l-Scalar-Plain">traefik.frontend.rule</span><span class="p p-Indicator">:</span> <span class="s">&quot;Host:${ORGANISATION}.popcube.xyz&quot;</span>
+     <span class="l l-Scalar l-Scalar-Plain">traefik.backend.loadbalancer.sticky</span><span class="p p-Indicator">:</span> <span class="s">&quot;true&quot;</span>
+     <span class="l l-Scalar l-Scalar-Plain">traefik.backend.loadbalancer.swarm</span><span class="p p-Indicator">:</span> <span class="s">&quot;true&quot;</span>
+     <span class="l l-Scalar l-Scalar-Plain">traefik.docker.network</span><span class="p p-Indicator">:</span> <span class="s">&quot;traefik-net&quot;</span>
+</pre></div>
+</td></tr></table></div>
+<div class="section" id="id1">
+<h3>Traefik<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Configuration</p>
+<img alt="infrastructure/../../_static/infrastructure/lb/traefik_dashboard.png" src="infrastructure/../../_static/infrastructure/lb/traefik_dashboard.png" />
+<p>Statistiques</p>
+<img alt="infrastructure/../../_static/infrastructure/lb/traefik_health.png" src="infrastructure/../../_static/infrastructure/lb/traefik_health.png" />
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="automatisation.html" class="btn btn-neutral float-right" title="Automatisation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="monitoring.html" class="btn btn-neutral" title="Monitoring de l’infrastucture" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, ETF.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

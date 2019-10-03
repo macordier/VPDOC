@@ -1,0 +1,511 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Mise à jour du 02 octobre 2019 &mdash; Visual Planning 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Visual Planning 0.1 documentation" href="../index.html"/>
+        <link rel="prev" title="Vbadge" href="../fonctionnalitees/vbadge.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Visual Planning
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Guide d'utilisation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guide_visual_planning/guide_utilisation.html">Comment se connecter ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide_visual_planning/guide_utilisation.html#choisir-son-planning">Choisir son planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide_visual_planning/guide_utilisation.html#que-faire-une-fois-connecte">Que faire une fois connecté ?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Fonctionnalitées</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../fonctionnalitees/import_automatique.html">Import Automatique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fonctionnalitees/habilitation_formation.html">Habilitation et formation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fonctionnalitees/vbadge.html">Vbadge</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Mises à jour</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Mise à jour du 02 octobre 2019</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#suivi-des-habilitations">Suivi des habilitations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#modification-des-informations-de-la-personne">Modification des informations de la personne</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#editeur-de-saisie-personnel">Editeur de saisie Personnel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ajout-de-statut">Ajout de statut</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#nouveaux-affichages">Nouveaux affichages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gestion-des-habilitations">Gestion des habilitations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#modification-techniques">Modification techniques</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#hierarchie-habilitations">Hierarchie habilitations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#automatisation">Automatisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dimensions-de-parametrage">Dimensions de paramétrage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modification-des-habilitations-sans-recyclage">Modification des habilitations sans recyclage</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#filtres-supplementaire">Filtres supplémentaire</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#filtre-d-evenement">Filtre d’événement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#filtre-de-ressources">Filtre de Ressources</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#modification-des-fonctionnalites-inutilisees">Modification des fonctionnalités inutilisées</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pdc">PDC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#soudure">SOUDURE</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#import-automatique">Import automatique</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Visual Planning</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Mise à jour du 02 octobre 2019</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/maj/maj_30092019.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="mise-a-jour-du-02-octobre-2019">
+<h1>Mise à jour du 02 octobre 2019<a class="headerlink" href="#mise-a-jour-du-02-octobre-2019" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="suivi-des-habilitations">
+<h2>Suivi des habilitations<a class="headerlink" href="#suivi-des-habilitations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="modification-des-informations-de-la-personne">
+<h3>Modification des informations de la personne<a class="headerlink" href="#modification-des-informations-de-la-personne" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Ajout d’une rubrique carte pro btp dans la personne</dt>
+<dd><ul class="first last">
+<li>Permet d’ajouter le scan de la carte pro dans la personne</li>
+<li>Permet de récupérer cette carte pro sur Vbadge</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Ajout d’une case à cocher “Ressource générique” dans la personne</dt>
+<dd><ul class="first last">
+<li>Permet de catégoriser la ressource en ressource générique*</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="editeur-de-saisie-personnel">
+<h3>Editeur de saisie Personnel<a class="headerlink" href="#editeur-de-saisie-personnel" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Modification de l’éditeur de saisie personnel pour les adaptations suivantes :</dt>
+<dd><ul class="first last simple">
+<li>Séparation des habilitations valides médicales des autres habilitations</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="ajout-de-statut">
+<h3>Ajout de statut<a class="headerlink" href="#ajout-de-statut" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Ajout d’une catégorie de statuts “Habilitations”</li>
+<li><dl class="first docutils">
+<dt>Ajout des ressources suivantes :</dt>
+<dd><ul class="first last">
+<li>+ 6 mois</li>
+<li>Entre 3 et 6 mois</li>
+<li>- 3 mois</li>
+<li>Expirée</li>
+<li>Suspendu</li>
+<li>Renouvelée</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="35%" />
+<col width="49%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Libellé</th>
+<th class="head">Condition</th>
+<th class="head">Fonctionnement</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>+ 6 mois</td>
+<td>Date de fin &gt;= 6 mois</td>
+<td>Export/Import : Auto habilitation &gt; 6 mois</td>
+</tr>
+<tr class="row-odd"><td>Entre 3 et 6 mois</td>
+<td>3 &lt; Date de fin &lt; 6</td>
+<td>Export/Import : Auto habilitation : Entre 3 et 6 mois</td>
+</tr>
+<tr class="row-even"><td>- 3 mois</td>
+<td>Date de fin &lt; 3 mois</td>
+<td>Export/Import : Auto habilitation &lt; 3 mois</td>
+</tr>
+<tr class="row-odd"><td>Expirée</td>
+<td>Date de fin &lt; 0</td>
+<td>Export/Import : Auto habilitation : Expirée</td>
+</tr>
+<tr class="row-even"><td>Renouvelée</td>
+<td>A un événement d’habilitation plus récent</td>
+<td>API : Habilitations</td>
+</tr>
+<tr class="row-odd"><td>Suspendu</td>
+<td>Manuellement par l’utilisateur</td>
+<td>Manuel</td>
+</tr>
+<tr class="row-even"><td>Sans recyclage</td>
+<td>Habilitation sans recyclage</td>
+<td>Création de l’événement</td>
+</tr>
+<tr class="row-odd"><td>Doublon</td>
+<td>Habilitations identiques aux même dates</td>
+<td>API : Habilitation</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="nouveaux-affichages">
+<h2>Nouveaux affichages<a class="headerlink" href="#nouveaux-affichages" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Séparation de la gestion des habilitations du personnels de la gestion des agréments machine.</li>
+<li>Regroupement de la gestion des habilitations et du tableau de suivi.</li>
+</ul>
+<div class="section" id="gestion-des-habilitations">
+<h3>Gestion des habilitations<a class="headerlink" href="#gestion-des-habilitations" title="Permalink to this headline">¶</a></h3>
+<p>L’affichage par mois des habilitations n’est pas très lisible et ne permet pas de se rendre compte des habilitations valides de la personne.</p>
+<p>L’affichage est maintenant annuel et reprend les couleurs de statut de l’habilitations :</p>
+<img alt="../_images/affichage_habilitations.png" src="../_images/affichage_habilitations.png" />
+</div>
+</div>
+<div class="section" id="modification-techniques">
+<h2>Modification techniques<a class="headerlink" href="#modification-techniques" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="hierarchie-habilitations">
+<h3>Hierarchie habilitations<a class="headerlink" href="#hierarchie-habilitations" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Changement du nom de la hierarchie</dt>
+<dd><ul class="first last">
+<li>Anciennement “Gestion des habilitations PEV” -&gt; “Ajout d’une habilitation / Agrément</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Ajout du statut</dt>
+<dd><ul class="first last">
+<li>Uniquement statut de type habilitation</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="automatisation">
+<h3>Automatisation<a class="headerlink" href="#automatisation" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Par import/Export <span class="classifier-delimiter">:</span> <span class="classifier"><em>(Effectué à 06:00 et 18:00)</em></span></dt>
+<dd><ul class="first last simple">
+<li>Auto habilitation &gt; 6 mois</li>
+<li>Auto habilitation : Entre 3 et 6 mois</li>
+<li>Auto habilitation &lt; 3 mois</li>
+<li>Auto habilitation : Expirée</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<dl class="last docutils">
+<dt>Ces exports ont eu base commune de filtre :</dt>
+<dd><ul class="first last simple">
+<li>Uniquement les évenement contenant une ressource <strong>HABILITATION</strong></li>
+<li>Ne modifie pas les habilitations notées : Ne plus suivre</li>
+<li>Ne modifie pas les habilitations : “Suspendu” ou “Renouvelée”</li>
+</ul>
+</dd>
+</dl>
+</div>
+<dl class="docutils">
+<dt>Par API <span class="classifier-delimiter">:</span> <span class="classifier"><em>(Effectué à 06:00 et 18:00)</em></span></dt>
+<dd><ul class="first last simple">
+<li>Vient vérifier si des recyclages ont été effectués pour passer les habilitations en “Renouvelée”</li>
+<li>Vient vérifier si l’habilitation n’est pas un doublon</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="dimensions-de-parametrage">
+<h3>Dimensions de paramétrage<a class="headerlink" href="#dimensions-de-parametrage" title="Permalink to this headline">¶</a></h3>
+<p>Les dimensions <strong>STATUTS</strong> et <strong>HABILITATIONS</strong> sont a passer en paramétrage pour récupérer les ajouts ou modifications sur les ressources</p>
+</div>
+<div class="section" id="modification-des-habilitations-sans-recyclage">
+<h3>Modification des habilitations sans recyclage<a class="headerlink" href="#modification-des-habilitations-sans-recyclage" title="Permalink to this headline">¶</a></h3>
+<p>Les habilitations sans recyclage passent automatiquement a 20ans de validités pour permettre de les suivres sur le nouveau planning.</p>
+</div>
+</div>
+<div class="section" id="filtres-supplementaire">
+<h2>Filtres supplémentaire<a class="headerlink" href="#filtres-supplementaire" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="filtre-d-evenement">
+<h3>Filtre d’événement<a class="headerlink" href="#filtre-d-evenement" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="filtre-de-ressources">
+<h3>Filtre de Ressources<a class="headerlink" href="#filtre-de-ressources" title="Permalink to this headline">¶</a></h3>
+<p>_Type = Habilitation :</p>
+</div>
+</div>
+<div class="section" id="modification-des-fonctionnalites-inutilisees">
+<h2>Modification des fonctionnalités inutilisées<a class="headerlink" href="#modification-des-fonctionnalites-inutilisees" title="Permalink to this headline">¶</a></h2>
+<p>Certains événements superflux sont resté dans le planning suite à des mises à jours ou des suppressions de fonctionnalités.</p>
+<div class="section" id="pdc">
+<h3>PDC<a class="headerlink" href="#pdc" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Suppressions des événements qui permettaient de calculer le plan de charge lors de la plannification horaire :</dt>
+<dd><ul class="first last simple">
+<li>Nombre d’événement supprimé : <strong>26478</strong></li>
+</ul>
+</dd>
+</dl>
+<ul class="simple">
+<li>La dimension PDC est supprimée</li>
+<li>Les hierarchies comprennant encore les ressources PDC ont été modifiées</li>
+<li>Les imports/export auto du PDC sont supprimé</li>
+</ul>
+</div>
+<div class="section" id="soudure">
+<h3>SOUDURE<a class="headerlink" href="#soudure" title="Permalink to this headline">¶</a></h3>
+<p>La soudure à été migrée sur le planning de rapport</p>
+<ul class="simple">
+<li>Suppression de la dimension soudure</li>
+<li><dl class="first docutils">
+<dt>Suppresion des formulaires de soudure :</dt>
+<dd><ul class="first last">
+<li>Soudure</li>
+<li>Meulage</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Suppression des hierarchies liés à la soudure :</dt>
+<dd><ul class="first last">
+<li>Rapport soudure</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>Suppression des formulaires VPGO</li>
+</ul>
+</div>
+</div>
+<div class="section" id="import-automatique">
+<h2>Import automatique<a class="headerlink" href="#import-automatique" title="Permalink to this headline">¶</a></h2>
+<p>Désactivation temporaire de la modification automatique de la qualification de bulletin du personnel.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../fonctionnalitees/vbadge.html" class="btn btn-neutral" title="Vbadge" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, ETF.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

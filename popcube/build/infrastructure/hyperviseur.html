@@ -1,0 +1,307 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Hyperviseur &mdash; Visual Planning 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Visual Planning 0.1 documentation" href="../index.html"/>
+        <link rel="next" title="Conteneur" href="conteneur.html"/>
+        <link rel="prev" title="Introduction" href="introduction.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Visual Planning
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Guide d'utilisation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/guide_utilisation.html">Comment se connecter ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/guide_utilisation.html#choisir-son-planning">Choisir son planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/guide_utilisation.html#que-faire-une-fois-connecte">Que faire une fois connecté ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/guide_utilisation.html#integration-continue">Intégration continue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/guide_utilisation.html#tests">Tests</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Application</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developpement/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developpement/introduction.html#contraintes">Contraintes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developpement/fonctionalite.html">Fonctionalité</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developpement/interface.html">Interface</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Infrastructure</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html#contraintes">Contraintes</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Hyperviseur</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#vmware-esxi">VMware ESXi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vsphere-client">Vsphere client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vcenter">Vcenter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#clustering">Clustering</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stockage">Stockage</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#vue-globale">Vue globale</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="conteneur.html">Conteneur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="storage.html">Stockage et réplication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="monitoring.html">Monitoring de l’infrastucture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loadBalancing.html">Load Balancing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatisation.html">Automatisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="final.html">Vue d’ensemble</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Produit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../marketing/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../marketing/pricing.html">Comment on gagne du cash</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../marketing/to_be_continued.html">Prochainement dans PopCube</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Visual Planning</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Hyperviseur</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/infrastructure/hyperviseur.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="hyperviseur">
+<h1>Hyperviseur<a class="headerlink" href="#hyperviseur" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="vmware-esxi">
+<h2>VMware ESXi<a class="headerlink" href="#vmware-esxi" title="Permalink to this headline">¶</a></h2>
+<p>VMware ESXi est un hyperviseur qui s’installe directement sur un serveur physique (type bare-metal) pour gérer des machines virtuelles.
+Conçus de façon à ce que la surface d’attaque exposée aux logiciels malveillants et aux menaces réseau soit retreinte, il est fiable et sécurisé.</p>
+<p>Une fonctionnalité qui le démarque des autres est le vMotion. Elle permet de déplacer des machines virtuelles à chaud d’un serveur physique à un autre sans interruption de service.</p>
+<img alt="infrastructure/../../_static/infrastructure/hyperviseur/esxi.png" src="infrastructure/../../_static/infrastructure/hyperviseur/esxi.png" />
+</div>
+<div class="section" id="vsphere-client">
+<h2>Vsphere client<a class="headerlink" href="#vsphere-client" title="Permalink to this headline">¶</a></h2>
+<p>Logiciel permettant d’administrer un ESXi ainsi que ses machines virtuelles.</p>
+<img alt="infrastructure/../../_static/infrastructure/hyperviseur/vsphere.jpg" src="infrastructure/../../_static/infrastructure/hyperviseur/vsphere.jpg" />
+</div>
+<div class="section" id="vcenter">
+<h2>Vcenter<a class="headerlink" href="#vcenter" title="Permalink to this headline">¶</a></h2>
+<p>C’est une appliance conçus par VMware qui permet de créer et manager un cluster d’ESXi (un hyperviseur d’hyperviseur) car dans notre cas, nous avons besoin d’assurer une haute disponibilité des services.</p>
+<img alt="infrastructure/../../_static/infrastructure/hyperviseur/vcenter.PNG" src="infrastructure/../../_static/infrastructure/hyperviseur/vcenter.PNG" />
+<div class="section" id="clustering">
+<h3>Clustering<a class="headerlink" href="#clustering" title="Permalink to this headline">¶</a></h3>
+<p>Depuis l’interface Vcenter, nous ajoutons les différents ESXi afin de pouvoir les gérer.</p>
+<p>Nous créons ensuite un cluster de tous ces hyperviseurs en apppliquant les meileures pratiques pour faire de la haute disponibilité.</p>
+<img alt="infrastructure/../../_static/infrastructure/hyperviseur/cluster.PNG" src="infrastructure/../../_static/infrastructure/hyperviseur/cluster.PNG" />
+</div>
+<div class="section" id="stockage">
+<h3>Stockage<a class="headerlink" href="#stockage" title="Permalink to this headline">¶</a></h3>
+<p>Des baies de stockage seront présentes dans chaque datacenter pour provisionner un stockage en ISCSI afin de stocker les différentes machines virtuelles.
+Ajout du stockage ISCSI sur un hyperviseur:</p>
+<img alt="infrastructure/../../_static/infrastructure/hyperviseur/stockage.PNG" src="infrastructure/../../_static/infrastructure/hyperviseur/stockage.PNG" />
+</div>
+</div>
+<div class="section" id="vue-globale">
+<h2>Vue globale<a class="headerlink" href="#vue-globale" title="Permalink to this headline">¶</a></h2>
+<img alt="infrastructure/../../_static/infrastructure/hyperviseur/hyperviseur.PNG" src="infrastructure/../../_static/infrastructure/hyperviseur/hyperviseur.PNG" />
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="conteneur.html" class="btn btn-neutral float-right" title="Conteneur" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="introduction.html" class="btn btn-neutral" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, ETF.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

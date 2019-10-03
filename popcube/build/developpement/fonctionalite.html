@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Fonctionalité &mdash; Visual Planning 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Visual Planning 0.1 documentation" href="../index.html"/>
+        <link rel="next" title="Interface" href="interface.html"/>
+        <link rel="prev" title="Introduction" href="introduction.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Visual Planning
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Guide d'utilisation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guide_utilisation.html">Comment se connecter ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide_utilisation.html#choisir-son-planning">Choisir son planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide_utilisation.html#que-faire-une-fois-connecte">Que faire une fois connecté ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide_utilisation.html#integration-continue">Intégration continue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide_utilisation.html#tests">Tests</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Application</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html#contraintes">Contraintes</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Fonctionalité</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#organisation">Organisation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#membres">Membres</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#channel">Channel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#droits">Droits</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#priver">Priver</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#public">Public</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#management">Management</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#appel">Appel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#voix">Voix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#videos">Vidéos</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#partages">Partages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#messages">Messages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="interface.html">Interface</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Infrastructure</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../infrastructure/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../infrastructure/introduction.html#contraintes">Contraintes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../infrastructure/hyperviseur.html">Hyperviseur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../infrastructure/conteneur.html">Conteneur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../infrastructure/storage.html">Stockage et réplication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../infrastructure/monitoring.html">Monitoring de l’infrastucture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../infrastructure/loadBalancing.html">Load Balancing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../infrastructure/automatisation.html">Automatisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../infrastructure/final.html">Vue d’ensemble</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Produit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../marketing/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../marketing/pricing.html">Comment on gagne du cash</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../marketing/to_be_continued.html">Prochainement dans PopCube</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Visual Planning</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Fonctionalité</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/developpement/fonctionalite.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="fonctionalite">
+<h1>Fonctionalité<a class="headerlink" href="#fonctionalite" title="Permalink to this headline">¶</a></h1>
+<p>Popcube est avant tout remplis de fonctionnalités utiles aux partages de ressources et communications rapide privée ou groupée.</p>
+<div class="section" id="organisation">
+<h2>Organisation<a class="headerlink" href="#organisation" title="Permalink to this headline">¶</a></h2>
+<p>L’organisation est tout simplement le nom de domaine sur PopCube. Il permet à vos équipse de se retrouver sous un seul
+nom et à tous vos collaborateurs de vous retrouver facilement.</p>
+<div class="section" id="membres">
+<h3>Membres<a class="headerlink" href="#membres" title="Permalink to this headline">¶</a></h3>
+<p>Les membres sont les utilisateurs inscrit sur votre organisation.
+Ils ont des droits et la possibilité de rejoindre des channels selon leurs habilitations.</p>
+</div>
+<div class="section" id="channel">
+<h3>Channel<a class="headerlink" href="#channel" title="Permalink to this headline">¶</a></h3>
+<p>Un channel est un salon de discution.
+C’est la place pour discuter avec votre service et/ou équipe sur un type particulier de besoin.
+Le nom du channel est important pour aider la hiérarchisation de votre organisation et permettre à vos
+membres de rejoindre les channels qu’ils désirent.</p>
+<p>Exemple :</p>
+<p>Il existe 3 type de channel :</p>
+<ul class="simple">
+<li>Les channels texte :<ul>
+<li>Dialogue texte</li>
+<li>Partage de ressources</li>
+</ul>
+</li>
+<li>Les channels audio :<ul>
+<li>Dialogue texte</li>
+<li>Partage de ressources</li>
+<li>Dialogue voix</li>
+</ul>
+</li>
+<li>Les channels vidéos :<ul>
+<li>Dialogue texte</li>
+<li>Partage de ressources</li>
+<li>Dialogue voix avec visio</li>
+</ul>
+</li>
+</ul>
+<p>Les membres peuvent engager des discutions privées entre eux avec la possibilité d’appel audio ou vidéo.</p>
+</div>
+<div class="section" id="droits">
+<h3>Droits<a class="headerlink" href="#droits" title="Permalink to this headline">¶</a></h3>
+<p>Les droits permettent à une organisation de manager leurs équipes en leurs donnant accès à des droits sur les channels.</p>
+<div class="section" id="priver">
+<h4>Priver<a class="headerlink" href="#priver" title="Permalink to this headline">¶</a></h4>
+<p>Le statut priver s’applique à l’organisation comme aux channels. Il permet de bloquer l’accès de ceux qu’y n’ont pas été invité.</p>
+</div>
+<div class="section" id="public">
+<h4>Public<a class="headerlink" href="#public" title="Permalink to this headline">¶</a></h4>
+<p>Une organisation ou un channel publique ne bloque aucun accès. Chaque membre d’une organasation peut
+y accéder sans avoir de droits particulié.</p>
+</div>
+<div class="section" id="management">
+<h4>Management<a class="headerlink" href="#management" title="Permalink to this headline">¶</a></h4>
+<p>Il est possible de créer des groupes auquels des membres sont associés pour éviter d’avoir à gérer un par un des channels.
+Le groupes sont associé à des channels et peuvent gérer d’autres groupes permettant ainsi à des équipes d’en gérer d’autres.</p>
+</div>
+</div>
+</div>
+<div class="section" id="appel">
+<h2>Appel<a class="headerlink" href="#appel" title="Permalink to this headline">¶</a></h2>
+<p>Les appels permettent aux équipes de communiquer rapidement et directement. Lors de la connexion sur un channel vous êtes directement connecté avec les autres participants.
+Il est possible de voir qui est actulement en ligne sur un channel.</p>
+<div class="section" id="voix">
+<h3>Voix<a class="headerlink" href="#voix" title="Permalink to this headline">¶</a></h3>
+<p>Les channels voix permettent de créer un salon de discution dans lequel les membres peuvent discuter à l’aide d’un micro.</p>
+</div>
+<div class="section" id="videos">
+<h3>Vidéos<a class="headerlink" href="#videos" title="Permalink to this headline">¶</a></h3>
+<p>Les channels vidéos permettent de créer un salon dans lequels les membres peuvent discuter à l’aide d’un micro et d’une caméra.</p>
+</div>
+</div>
+<div class="section" id="partages">
+<h2>Partages<a class="headerlink" href="#partages" title="Permalink to this headline">¶</a></h2>
+<p>Il est posssible d’envoyer des fichiers relié à un channel.
+Chaque utilisateurs se connectant au channels peut les voir ou recevoir.</p>
+</div>
+<div class="section" id="messages">
+<h2>Messages<a class="headerlink" href="#messages" title="Permalink to this headline">¶</a></h2>
+<p>Les messages sont envoyé avec certaines balises html afin de pouvoir mettre en forme le texte.
+L’application reconnais si le message contient des liens afin de les faire ressortir et permet de cliquer directement dessus.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="interface.html" class="btn btn-neutral float-right" title="Interface" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="introduction.html" class="btn btn-neutral" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, ETF.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,516 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Automatisation &mdash; Visual Planning 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Visual Planning 0.1 documentation" href="../index.html"/>
+        <link rel="next" title="Vue d’ensemble" href="final.html"/>
+        <link rel="prev" title="Load Balancing" href="loadBalancing.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Visual Planning
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Guide d'utilisation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guide_utilisation.html">Comment se connecter ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide_utilisation.html#choisir-son-planning">Choisir son planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide_utilisation.html#que-faire-une-fois-connecte">Que faire une fois connecté ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide_utilisation.html#integration-continue">Intégration continue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide_utilisation.html#tests">Tests</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Application</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developpement/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developpement/introduction.html#contraintes">Contraintes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developpement/fonctionalite.html">Fonctionalité</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developpement/interface.html">Interface</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Infrastructure</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html#contraintes">Contraintes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hyperviseur.html">Hyperviseur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conteneur.html">Conteneur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="storage.html">Stockage et réplication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="monitoring.html">Monitoring de l’infrastucture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loadBalancing.html">Load Balancing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Automatisation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#provisionning-des-machines-virtuelles">Provisionning des machines virtuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ajout-aux-cluster-swarm">Ajout aux cluster swarm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#conteneur">Conteneur</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#reseaux-et-dns">Réseaux et dns</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mise-a-jours-des-conteneurs">Mise a jours des conteneurs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#portabilite">Portabilité</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#monitoring">Monitoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reverse-proxy">Reverse Proxy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="final.html">Vue d’ensemble</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Produit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../marketing/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../marketing/pricing.html">Comment on gagne du cash</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../marketing/to_be_continued.html">Prochainement dans PopCube</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Visual Planning</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Automatisation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/infrastructure/automatisation.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="automatisation">
+<h1>Automatisation<a class="headerlink" href="#automatisation" title="Permalink to this headline">¶</a></h1>
+<p>Ansible est un outil open-source de gestion de configuration écrit en python (aussi dispo en version commerciale avec une interface graphique et un service de déploiement). La configuration se fait via des fichiers appelés “Playbooks”.</p>
+<p>Les avantages :</p>
+<ul class="simple">
+<li>Un système déclaratif : syntaxe YAML facilement lisible, ce qui rend l’apprentissage très rapide.</li>
+<li>Templating des fichiers de configuration : qui permet d’avoir des fichiers dynamiquement générés en fonction de ce que vous voulez, tel que le rôle du serveur, ou bien dépendant d’un autre serveur. En plus le langage de template par défaut est Jinja2, ça plaira aux amateurs de Django.</li>
+</ul>
+<p>Quasiment rien à installer. A part Ansible sur votre machine hôte, tout ce dont vous avez besoin c’est d’un accès root via SSH sur vos serveurs cibles.</p>
+<div class="section" id="provisionning-des-machines-virtuelles">
+<h2>Provisionning des machines virtuelles<a class="headerlink" href="#provisionning-des-machines-virtuelles" title="Permalink to this headline">¶</a></h2>
+<p>Nous avons besoin d’automatiser la création de machines virtuelles car elles servent d’hôte pour les conteneurs Docker.</p>
+<p>Ainsi, nous pourrons créer autant de stack docker (dans la limite des ressources physiques disponibles).</p>
+<p>Exemple de configuration:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">vsphere_guest</span><span class="p">:</span>
+    <span class="n">vcenter_hostname</span><span class="p">:</span> <span class="n">vcenter</span><span class="o">.</span><span class="n">vsphere</span><span class="o">.</span><span class="n">local</span>    <span class="o">//</span> <span class="n">On</span> <span class="n">se</span> <span class="n">connecte</span> <span class="n">sur</span> <span class="n">le</span> <span class="n">vCenter</span> <span class="n">qui</span> <span class="n">manage</span> <span class="n">les</span> <span class="n">esxi</span>
+    <span class="n">username</span><span class="p">:</span> <span class="n">user</span>
+    <span class="n">password</span><span class="p">:</span> <span class="n">password</span>
+    <span class="n">guest</span><span class="p">:</span> <span class="n">vm_name</span>
+    <span class="n">state</span><span class="p">:</span> <span class="n">powered_on</span>
+    <span class="n">vm_extra_config</span><span class="p">:</span>                           <span class="o">//</span> <span class="n">On</span> <span class="n">active</span> <span class="n">l</span><span class="s1">&#39;ajout à chaud CPU &amp; RAM</span>
+      <span class="n">vcpu</span><span class="o">.</span><span class="n">hotadd</span><span class="p">:</span> <span class="n">yes</span>
+      <span class="n">mem</span><span class="o">.</span><span class="n">hotadd</span><span class="p">:</span>  <span class="n">yes</span>
+      <span class="n">notes</span><span class="p">:</span> <span class="n">docker</span><span class="o">-</span><span class="n">node</span>
+      <span class="n">folder</span><span class="p">:</span> <span class="n">VM</span>
+    <span class="n">vm_disk</span><span class="p">:</span>                                   <span class="o">//</span> <span class="n">On</span> <span class="n">définit</span> <span class="n">le</span> <span class="n">stockage</span> <span class="n">de</span> <span class="n">la</span> <span class="n">VM</span>
+      <span class="n">disk1</span><span class="p">:</span>
+        <span class="n">size_gb</span><span class="p">:</span> <span class="mi">64</span>
+        <span class="nb">type</span><span class="p">:</span> <span class="n">thin</span>
+        <span class="n">datastore</span><span class="p">:</span> <span class="n">ISCSI</span>
+        <span class="n">folder</span><span class="p">:</span> <span class="n">VM</span>
+    <span class="n">vm_nic</span><span class="p">:</span>                                    <span class="o">//</span> <span class="n">On</span> <span class="n">définit</span> <span class="n">le</span> <span class="n">réseau</span> <span class="n">auquel</span> <span class="n">sera</span> <span class="n">connecté</span> <span class="n">la</span> <span class="n">VM</span>
+      <span class="n">nic1</span><span class="p">:</span>
+        <span class="nb">type</span><span class="p">:</span> <span class="n">vmxnet3</span>
+        <span class="n">network</span><span class="p">:</span> <span class="n">VM</span> <span class="n">Network</span>
+        <span class="n">network_type</span><span class="p">:</span> <span class="n">standard</span>
+    <span class="n">vm_hardware</span><span class="p">:</span>                               <span class="o">//</span> <span class="n">On</span> <span class="n">spécifie</span> <span class="n">le</span> <span class="n">matériel</span> <span class="o">&amp;</span> <span class="n">l</span><span class="s1">&#39;image iso utilisée</span>
+      <span class="n">memory_mb</span><span class="p">:</span> <span class="mi">8192</span>
+      <span class="n">num_cpus</span><span class="p">:</span> <span class="mi">2</span>
+      <span class="n">osid</span><span class="p">:</span> <span class="n">debian8</span>
+      <span class="n">scsi</span><span class="p">:</span> <span class="n">paravirtual</span>
+      <span class="n">vm_cdrom</span><span class="p">:</span>
+        <span class="nb">type</span><span class="p">:</span> <span class="s2">&quot;iso&quot;</span>
+        <span class="n">iso_path</span><span class="p">:</span> <span class="s2">&quot;Datastore/iso/debian-8.iso&quot;</span>
+    <span class="n">esxi</span><span class="p">:</span>                                      <span class="o">//</span> <span class="n">On</span> <span class="n">indique</span> <span class="n">sur</span> <span class="n">quel</span> <span class="n">ESXi</span> <span class="n">hôte</span> <span class="n">la</span> <span class="n">vm</span> <span class="n">fonctionnera</span>
+      <span class="n">datacenter</span><span class="p">:</span> <span class="n">Datacenter</span>
+      <span class="n">hostname</span><span class="p">:</span> <span class="n">esx1</span><span class="o">.</span><span class="n">popcube</span><span class="o">.</span><span class="n">xyz</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ajout-aux-cluster-swarm">
+<h2>Ajout aux cluster swarm<a class="headerlink" href="#ajout-aux-cluster-swarm" title="Permalink to this headline">¶</a></h2>
+<p>Pour rejoindre le cluster j’utilise le roles :</p>
+<blockquote>
+<div><p><a class="reference external" href="https://galaxy.ansible.com/atosatto/docker-swarm/">Github du roles swarm</a></p>
+<p>Exemple Playbooks:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">TASK</span> <span class="p">[</span><span class="n">atosatto</span><span class="o">.</span><span class="n">docker</span><span class="o">-</span><span class="n">swarm</span> <span class="p">:</span> <span class="n">Install</span> <span class="n">python</span><span class="o">-</span><span class="n">pip</span><span class="o">.</span><span class="p">]</span> <span class="o">*****************************</span>
+<span class="n">skipping</span><span class="p">:</span> <span class="p">[</span><span class="n">sw01</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="n">item</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;python-pip&#39;</span><span class="p">))</span>
+
+<span class="n">TASK</span> <span class="p">[</span><span class="n">atosatto</span><span class="o">.</span><span class="n">docker</span><span class="o">-</span><span class="n">swarm</span> <span class="p">:</span> <span class="n">Install</span> <span class="n">the</span> <span class="n">Python</span> <span class="n">SNI</span> <span class="n">support</span> <span class="n">packages</span><span class="o">.</span><span class="p">]</span> <span class="o">********</span>
+<span class="n">skipping</span><span class="p">:</span> <span class="p">[</span><span class="n">sw01</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="n">item</span><span class="o">=</span><span class="n">python</span><span class="o">-</span><span class="n">dev</span><span class="p">)</span>
+<span class="n">skipping</span><span class="p">:</span> <span class="p">[</span><span class="n">sw01</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="n">item</span><span class="o">=</span><span class="n">libssl</span><span class="o">-</span><span class="n">dev</span><span class="p">)</span>
+<span class="n">skipping</span><span class="p">:</span> <span class="p">[</span><span class="n">sw01</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="n">item</span><span class="o">=</span><span class="n">libffi</span><span class="o">-</span><span class="n">dev</span><span class="p">)</span>
+
+<span class="n">TASK</span> <span class="p">[</span><span class="n">atosatto</span><span class="o">.</span><span class="n">docker</span><span class="o">-</span><span class="n">swarm</span> <span class="p">:</span> <span class="n">Install</span> <span class="n">the</span> <span class="n">Python</span> <span class="n">SNI</span> <span class="n">python</span><span class="o">-</span><span class="n">pip</span> <span class="n">dependencies</span><span class="o">.</span><span class="p">]</span> <span class="o">***</span>
+<span class="n">skipping</span><span class="p">:</span> <span class="p">[</span><span class="n">sw01</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="n">item</span><span class="o">=</span><span class="n">pyopenssl</span><span class="p">)</span>
+<span class="n">skipping</span><span class="p">:</span> <span class="p">[</span><span class="n">sw01</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="n">item</span><span class="o">=</span><span class="n">ndg</span><span class="o">-</span><span class="n">httpsclient</span><span class="p">)</span>
+<span class="n">skipping</span><span class="p">:</span> <span class="p">[</span><span class="n">sw01</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="n">item</span><span class="o">=</span><span class="n">pyasn1</span><span class="p">)</span>
+
+<span class="n">TASK</span> <span class="p">[</span><span class="n">atosatto</span><span class="o">.</span><span class="n">docker</span><span class="o">-</span><span class="n">swarm</span> <span class="p">:</span> <span class="n">Import</span> <span class="n">Docker</span> <span class="n">APT</span> <span class="n">public</span> <span class="n">key</span><span class="o">.</span><span class="p">]</span> <span class="o">*******************</span>
+<span class="n">skipping</span><span class="p">:</span> <span class="p">[</span><span class="n">sw01</span><span class="p">]</span>
+
+<span class="n">TASK</span> <span class="p">[</span><span class="n">atosatto</span><span class="o">.</span><span class="n">docker</span><span class="o">-</span><span class="n">swarm</span> <span class="p">:</span> <span class="n">Install</span> <span class="n">yum</span><span class="o">-</span><span class="n">utils</span> <span class="k">if</span> <span class="n">necessary</span><span class="o">.</span><span class="p">]</span> <span class="o">*****************</span>
+<span class="n">skipping</span><span class="p">:</span> <span class="p">[</span><span class="n">sw01</span><span class="p">]</span>
+
+<span class="n">TASK</span> <span class="p">[</span><span class="n">atosatto</span><span class="o">.</span><span class="n">docker</span><span class="o">-</span><span class="n">swarm</span> <span class="p">:</span> <span class="n">Install</span> <span class="n">apt</span><span class="o">-</span><span class="n">transport</span><span class="o">-</span><span class="n">https</span> <span class="k">if</span> <span class="n">necessary</span><span class="o">.</span><span class="p">]</span> <span class="o">*******</span>
+<span class="n">skipping</span><span class="p">:</span> <span class="p">[</span><span class="n">sw01</span><span class="p">]</span>
+
+<span class="n">TASK</span> <span class="p">[</span><span class="n">atosatto</span><span class="o">.</span><span class="n">docker</span><span class="o">-</span><span class="n">swarm</span> <span class="p">:</span> <span class="n">Add</span> <span class="n">the</span> <span class="n">YUM</span> <span class="n">Docker</span> <span class="n">repository</span><span class="o">.</span><span class="p">]</span> <span class="o">******************</span>
+<span class="n">skipping</span><span class="p">:</span> <span class="p">[</span><span class="n">sw01</span><span class="p">]</span>
+
+<span class="n">TASK</span> <span class="p">[</span><span class="n">atosatto</span><span class="o">.</span><span class="n">docker</span><span class="o">-</span><span class="n">swarm</span> <span class="p">:</span> <span class="n">Add</span> <span class="n">the</span> <span class="n">APT</span> <span class="n">Docker</span> <span class="n">repository</span><span class="o">.</span><span class="p">]</span> <span class="o">******************</span>
+<span class="n">skipping</span><span class="p">:</span> <span class="p">[</span><span class="n">sw01</span><span class="p">]</span>
+
+<span class="n">TASK</span> <span class="p">[</span><span class="n">atosatto</span><span class="o">.</span><span class="n">docker</span><span class="o">-</span><span class="n">swarm</span> <span class="p">:</span> <span class="n">Install</span> <span class="n">Docker</span> <span class="n">dependencies</span><span class="o">.</span><span class="p">]</span> <span class="o">********************</span>
+<span class="n">skipping</span><span class="p">:</span> <span class="p">[</span><span class="n">sw01</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="n">item</span><span class="o">=</span><span class="n">linux</span><span class="o">-</span><span class="n">image</span><span class="o">-</span><span class="n">extra</span><span class="o">-</span><span class="n">virtual</span><span class="p">)</span>
+
+<span class="n">TASK</span> <span class="p">[</span><span class="n">atosatto</span><span class="o">.</span><span class="n">docker</span><span class="o">-</span><span class="n">swarm</span> <span class="p">:</span> <span class="n">Install</span> <span class="n">the</span> <span class="n">Docker</span> <span class="n">Engine</span><span class="o">.</span><span class="p">]</span> <span class="o">**********************</span>
+<span class="n">skipping</span><span class="p">:</span> <span class="p">[</span><span class="n">sw01</span><span class="p">]</span>
+
+<span class="n">TASK</span> <span class="p">[</span><span class="n">atosatto</span><span class="o">.</span><span class="n">docker</span><span class="o">-</span><span class="n">swarm</span> <span class="p">:</span> <span class="n">Enable</span> <span class="n">the</span> <span class="n">Docker</span> <span class="n">daemon</span> <span class="k">as</span> <span class="n">a</span> <span class="n">service</span> <span class="ow">and</span> <span class="n">start</span> <span class="n">it</span><span class="o">.</span><span class="p">]</span> <span class="o">***</span>
+<span class="n">skipping</span><span class="p">:</span> <span class="p">[</span><span class="n">sw01</span><span class="p">]</span>
+
+<span class="n">TASK</span> <span class="p">[</span><span class="n">atosatto</span><span class="o">.</span><span class="n">docker</span><span class="o">-</span><span class="n">swarm</span> <span class="p">:</span> <span class="n">Install</span> <span class="n">docker</span><span class="o">-</span><span class="n">py</span> <span class="mf">1.9</span><span class="o">.</span><span class="mi">0</span> <span class="n">to</span> <span class="n">fix</span> <span class="n">Ansible</span> <span class="n">issue</span> <span class="mi">17495</span><span class="p">]</span> <span class="o">***</span>
+<span class="n">skipping</span><span class="p">:</span> <span class="p">[</span><span class="n">sw01</span><span class="p">]</span>
+
+<span class="n">TASK</span> <span class="p">[</span><span class="n">atosatto</span><span class="o">.</span><span class="n">docker</span><span class="o">-</span><span class="n">swarm</span> <span class="p">:</span> <span class="n">Install</span> <span class="n">docker</span><span class="o">-</span><span class="n">py</span><span class="p">]</span> <span class="o">*******************************</span>
+<span class="n">skipping</span><span class="p">:</span> <span class="p">[</span><span class="n">sw01</span><span class="p">]</span>
+
+<span class="n">TASK</span> <span class="p">[</span><span class="n">atosatto</span><span class="o">.</span><span class="n">docker</span><span class="o">-</span><span class="n">swarm</span> <span class="p">:</span> <span class="n">Add</span> <span class="n">the</span> <span class="n">Docker</span> <span class="n">administrators</span> <span class="n">to</span> <span class="n">the</span> <span class="n">Docker</span> <span class="n">group</span><span class="p">]</span> <span class="o">***</span>
+<span class="n">skipping</span><span class="p">:</span> <span class="p">[</span><span class="n">sw01</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="n">item</span><span class="o">=</span><span class="n">root</span><span class="p">)</span>
+
+<span class="n">TASK</span> <span class="p">[</span><span class="n">atosatto</span><span class="o">.</span><span class="n">docker</span><span class="o">-</span><span class="n">swarm</span> <span class="p">:</span> <span class="n">Kill</span> <span class="n">the</span> <span class="n">ansible_user</span> <span class="n">active</span> <span class="n">SSH</span> <span class="n">connections</span><span class="p">]</span> <span class="o">****</span>
+<span class="n">skipping</span><span class="p">:</span> <span class="p">[</span><span class="n">sw01</span><span class="p">]</span>
+
+<span class="n">TASK</span> <span class="p">[</span><span class="n">atosatto</span><span class="o">.</span><span class="n">docker</span><span class="o">-</span><span class="n">swarm</span> <span class="p">:</span> <span class="n">Check</span> <span class="k">if</span> <span class="s2">&quot;Swarm Mode&quot;</span> <span class="ow">is</span> <span class="n">enabled</span><span class="o">.</span><span class="p">]</span> <span class="o">***************</span>
+<span class="n">ok</span><span class="p">:</span> <span class="p">[</span><span class="n">sw01</span><span class="p">]</span>
+
+<span class="n">TASK</span> <span class="p">[</span><span class="n">atosatto</span><span class="o">.</span><span class="n">docker</span><span class="o">-</span><span class="n">swarm</span> <span class="p">:</span> <span class="n">Init</span> <span class="s2">&quot;Swarm Mode&quot;</span> <span class="n">on</span> <span class="n">the</span> <span class="n">first</span> <span class="n">manager</span><span class="o">.</span><span class="p">]</span> <span class="o">*********</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="conteneur">
+<h2>Conteneur<a class="headerlink" href="#conteneur" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="reseaux-et-dns">
+<h3>Réseaux et dns<a class="headerlink" href="#reseaux-et-dns" title="Permalink to this headline">¶</a></h3>
+<p>Je ping la database de l’organisation de maxime:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>docker@docker-02:~$ docker exec -it maxime_api.1.93ms44c6jdslhhazikwbdmrki /bin/sh
+/go/src/github.com/titouanfreville/popcubeapi # ping maxime_database
+PING maxime_database (10.0.3.4): 56 data bytes
+64 bytes from 10.0.3.4: seq=0 ttl=64 time=0.080 ms
+64 bytes from 10.0.3.4: seq=1 ttl=64 time=0.092 ms
+</pre></div>
+</div>
+<p>Depuis la database je ping le conteneur disponible:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>docker@docker-02:~$ docker service scale maxime_api=5
+docker@docker-03:~$ docker exec -it maxime_database.1.rrppb6d5qaed3cm8n7oa42qes /bin/bash
+root@1c32df28a830:/#
+root@1c32df28a830:/# ping maxime_api
+PING maxime_api (10.0.3.2): 56 data bytes
+64 bytes from 10.0.3.2: icmp_seq=0 ttl=64 time=0.053 ms
+64 bytes from 10.0.3.2: icmp_seq=1 ttl=64 time=0.100 ms
+root@1c32df28a830:/# ping maxime_api.1.m19g9tbv4m6kx4794i1aoi0hh
+PING maxime_api.1.m19g9tbv4m6kx4794i1aoi0hh (10.0.3.18): 56 data bytes
+
+
+root@1c32df28a830:/# dig tasks.maxime_api
+
+    ; &lt;&lt;&gt;&gt; DiG 9.9.5-9+deb8u11-Debian &lt;&lt;&gt;&gt; tasks.maxime_api
+    ;; global options: +cmd
+    ;; Got answer:
+    ;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 42947
+    ;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 0, ADDITIONAL: 0
+
+    ;; QUESTION SECTION:
+    ;tasks.maxime_api.              IN      A
+
+    ;; ANSWER SECTION:
+    tasks.maxime_api.       600     IN      A       10.0.3.7
+    tasks.maxime_api.       600     IN      A       10.0.3.9
+    tasks.maxime_api.       600     IN      A       10.0.3.3
+    tasks.maxime_api.       600     IN      A       10.0.3.11
+    tasks.maxime_api.       600     IN      A       10.0.3.18
+
+    ;; Query time: 0 msec
+    ;; SERVER: 127.0.0.11#53(127.0.0.11)
+    ;; WHEN: Mon May 29 12:23:16 UTC 2017
+    ;; MSG SIZE  rcvd: 194
+</pre></div>
+</div>
+<p>Le nom de staks et service:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="nd">@1c32df28a830</span><span class="p">:</span><span class="o">/</span><span class="c1"># nslookup maxime_api</span>
+<span class="n">Server</span><span class="p">:</span>             <span class="mf">127.0</span><span class="o">.</span><span class="mf">0.11</span>
+<span class="n">Address</span><span class="p">:</span>    <span class="mf">127.0</span><span class="o">.</span><span class="mf">0.11</span><span class="c1">#53</span>
+
+<span class="n">Non</span><span class="o">-</span><span class="n">authoritative</span> <span class="n">answer</span><span class="p">:</span>
+<span class="n">Name</span><span class="p">:</span>       <span class="n">maxime_api</span>
+<span class="n">Address</span><span class="p">:</span> <span class="mf">10.0</span><span class="o">.</span><span class="mf">3.2</span>
+
+<span class="n">root</span><span class="nd">@1c32df28a830</span><span class="p">:</span><span class="o">/</span><span class="c1"># nslookup tasks.maxime_api</span>
+<span class="n">Server</span><span class="p">:</span>             <span class="mf">127.0</span><span class="o">.</span><span class="mf">0.11</span>
+<span class="n">Address</span><span class="p">:</span>    <span class="mf">127.0</span><span class="o">.</span><span class="mf">0.11</span><span class="c1">#53</span>
+
+<span class="n">Non</span><span class="o">-</span><span class="n">authoritative</span> <span class="n">answer</span><span class="p">:</span>
+<span class="n">Name</span><span class="p">:</span>       <span class="n">tasks</span><span class="o">.</span><span class="n">maxime_api</span>
+<span class="n">Address</span><span class="p">:</span> <span class="mf">10.0</span><span class="o">.</span><span class="mf">3.3</span>
+<span class="n">Name</span><span class="p">:</span>       <span class="n">tasks</span><span class="o">.</span><span class="n">maxime_api</span>
+<span class="n">Address</span><span class="p">:</span> <span class="mf">10.0</span><span class="o">.</span><span class="mf">3.11</span>
+<span class="n">Name</span><span class="p">:</span>       <span class="n">tasks</span><span class="o">.</span><span class="n">maxime_api</span>
+<span class="n">Address</span><span class="p">:</span> <span class="mf">10.0</span><span class="o">.</span><span class="mf">3.7</span>
+<span class="n">Name</span><span class="p">:</span>       <span class="n">tasks</span><span class="o">.</span><span class="n">maxime_api</span>
+<span class="n">Address</span><span class="p">:</span> <span class="mf">10.0</span><span class="o">.</span><span class="mf">3.9</span>
+<span class="n">Name</span><span class="p">:</span>       <span class="n">tasks</span><span class="o">.</span><span class="n">maxime_api</span>
+<span class="n">Address</span><span class="p">:</span> <span class="mf">10.0</span><span class="o">.</span><span class="mf">3.18</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="mise-a-jours-des-conteneurs">
+<h3>Mise a jours des conteneurs<a class="headerlink" href="#mise-a-jours-des-conteneurs" title="Permalink to this headline">¶</a></h3>
+<p>Exmple : ajout d’un labels:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>docker@docker-02:~$ docker service update maxime_database --update-parallelism 2 --with-registry-auth --container-label-add xyz.popcube.org=maxime
+maxime_database
+
+&quot;UpdateStatus&quot;: {
+        &quot;State&quot;: &quot;completed&quot;,
+        &quot;StartedAt&quot;: &quot;2017-05-29T12:11:49.342150133Z&quot;,
+        &quot;CompletedAt&quot;: &quot;2017-05-29T12:12:32.897318749Z&quot;,
+        &quot;Message&quot;: &quot;update completed&quot;
+    }
+docker@docker-02:~$ docker service update maxime_api
+&quot;UpdateStatus&quot;: {
+            &quot;State&quot;: &quot;updating&quot;,
+            &quot;StartedAt&quot;: &quot;2017-05-29T12:36:21.96182509Z&quot;,
+            &quot;CompletedAt&quot;: &quot;1970-01-01T00:00:00Z&quot;,
+            &quot;Message&quot;: &quot;update in progress&quot;
+        }
+
+        ID            NAME              IMAGE                                              NODE       DESIRED STATE  CURRENT STATE            ERROR  PORTS
+        fg54tw7l62lb  maxime_api.1      registry.popcube.xyz:5000/popcubeapi:alpha-1.1.11  docker-01  Running        Running 2 minutes ago
+        m19g9tbv4m6k   \_ maxime_api.1  registry.popcube.xyz:5000/popcubeapi:alpha-1.1.11  docker-03  Shutdown       Shutdown 3 minutes ago
+        93ms44c6jdsl   \_ maxime_api.1  registry.popcube.xyz:5000/popcubeapi:alpha-1.1.11  docker-02  Shutdown       Shutdown 27 minutes ago
+        xyq4od3bl2l4   \_ maxime_api.1  registry.popcube.xyz:5000/popcubeapi:alpha-1.1.11  docker-01  Shutdown       Shutdown 3 days ago
+        vitoudmvt0nd  maxime_api.2      registry.popcube.xyz:5000/popcubeapi:alpha-1.1.11  docker-03  Running        Running 2 minutes ago
+        tn1hudgg18ve   \_ maxime_api.2  registry.popcube.xyz:5000/popcubeapi:alpha-1.1.11  docker-01  Shutdown       Shutdown 3 minutes ago
+        klvmqfyi3vn9  maxime_api.3      registry.popcube.xyz:5000/popcubeapi:alpha-1.1.11  docker-02  Running        Running 2 minutes ago
+        p3opbb8iq86w   \_ maxime_api.3  registry.popcube.xyz:5000/popcubeapi:alpha-1.1.11  docker-02  Shutdown       Shutdown 3 minutes ago
+        n9wg7howeasg  maxime_api.4      registry.popcube.xyz:5000/popcubeapi:alpha-1.1.11  docker-01  Running        Running 2 minutes ago
+        f75oupbzedf1   \_ maxime_api.4  registry.popcube.xyz:5000/popcubeapi:alpha-1.1.11  docker-01  Shutdown       Shutdown 3 minutes ago
+        uhha8n4lajcr  maxime_api.5      registry.popcube.xyz:5000/popcubeapi:alpha-1.1.11  docker-02  Running        Running 2 minutes ago
+        34sja7n3xcv5   \_ maxime_api.5  registry.popcube.xyz:5000/popcubeapi:alpha-1.1.11  docker-02  Shutdown       Shutdown 3 minutes ago
+</pre></div>
+</div>
+</div>
+<div class="section" id="portabilite">
+<h3>Portabilité<a class="headerlink" href="#portabilite" title="Permalink to this headline">¶</a></h3>
+<p>Les images se déplace facillement entre les noeuds</p>
+<p>Exemple de nos images docker:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">registry</span><span class="o">.</span><span class="n">popcube</span><span class="o">.</span><span class="n">xyz</span><span class="p">:</span><span class="mi">5000</span><span class="o">/</span><span class="n">popcubeapi</span> <span class="p">:</span> <span class="mi">332</span> <span class="n">MB</span>
+<span class="n">registry</span><span class="o">.</span><span class="n">popcube</span><span class="o">.</span><span class="n">xyz</span><span class="p">:</span><span class="mi">5000</span><span class="o">/</span><span class="n">popcube_website</span> <span class="p">:</span> <span class="mi">18</span> <span class="n">MB</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="monitoring">
+<h2>Monitoring<a class="headerlink" href="#monitoring" title="Permalink to this headline">¶</a></h2>
+<p>Grace à l’écoute sur la socket les nodes exploreurs récoltent directement les nouveaux conteneurs qui sont créé.</p>
+</div>
+<div class="section" id="reverse-proxy">
+<h2>Reverse Proxy<a class="headerlink" href="#reverse-proxy" title="Permalink to this headline">¶</a></h2>
+<p>Selon les labels (swarm) du service, Traefik génére automatiquement la configuration de redirections.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="final.html" class="btn btn-neutral float-right" title="Vue d’ensemble" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="loadBalancing.html" class="btn btn-neutral" title="Load Balancing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, ETF.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

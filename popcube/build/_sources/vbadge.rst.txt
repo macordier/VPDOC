@@ -1,0 +1,29 @@
+.. vbadge:
+
+==========================
+Vbadge
+==========================
+
+Préambule
+---------
+
+Vbadge est une carte distribuée aux collaborateurs permettant grâce à un **QR code** imprimé dessus de récupérer ses habilitations / autorisations.
+
+Les habilitations / autorisations sont reliées directement à Visual Planning.
+
+Qui peut avoir une carte ?
+--------------------------
+
+Seul les personnes importés par KHEOPS peuvent avoir une carte.
+
+C'est à dire :
+    - CDI
+    - CDD
+    - CDIC
+
+.. warning::
+    Les ``Intérimaires`` et ``Stagiaires`` sont les seuls ressources qui ne peuvent pas obtenir de carte.
+
+Demander une carte pour un collaborateur
+----------------------------------------
+

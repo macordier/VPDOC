@@ -1,0 +1,322 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Monitoring de l’infrastucture &mdash; Visual Planning 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Visual Planning 0.1 documentation" href="../index.html"/>
+        <link rel="next" title="Load Balancing" href="loadBalancing.html"/>
+        <link rel="prev" title="Stockage et réplication" href="storage.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Visual Planning
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Guide d'utilisation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/guide_utilisation.html">Comment se connecter ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/guide_utilisation.html#choisir-son-planning">Choisir son planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/guide_utilisation.html#que-faire-une-fois-connecte">Que faire une fois connecté ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/guide_utilisation.html#integration-continue">Intégration continue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/guide_utilisation.html#tests">Tests</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Application</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developpement/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developpement/introduction.html#contraintes">Contraintes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developpement/fonctionalite.html">Fonctionalité</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developpement/interface.html">Interface</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Infrastructure</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html#contraintes">Contraintes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hyperviseur.html">Hyperviseur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conteneur.html">Conteneur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="storage.html">Stockage et réplication</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Monitoring de l’infrastucture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#interne">Interne</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Grafana</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#externe">Externe</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cloud-weave">cloud weave</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="loadBalancing.html">Load Balancing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatisation.html">Automatisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="final.html">Vue d’ensemble</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Produit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../marketing/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../marketing/pricing.html">Comment on gagne du cash</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../marketing/to_be_continued.html">Prochainement dans PopCube</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Visual Planning</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Monitoring de l’infrastucture</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/infrastructure/monitoring.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="monitoring-de-l-infrastucture">
+<h1>Monitoring de l’infrastucture<a class="headerlink" href="#monitoring-de-l-infrastucture" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="interne">
+<h2>Interne<a class="headerlink" href="#interne" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>ElasticSearch</li>
+</ul>
+<p>Puissant moteur de recherche utilisé par exemple par github</p>
+<ul class="simple">
+<li>Logstash</li>
+</ul>
+<p>Analyse des logs</p>
+<ul class="simple">
+<li>Kibana</li>
+</ul>
+<p>Les données brutes sont analysées dans Logstash, stockées dans Elasticsearch, mais ne sont pas encore exploitables. Kibana est une interface Web qui se connecte au cluster Elasticsearch, et permet de faire des requêtes en mode texte pour générer des graphiques</p>
+<ul class="simple">
+<li>grafana</li>
+</ul>
+<p>Grafana vous permet d’interroger, visualiser, alerter et comprendre vos paramètres, peu importe où ils sont stockés.</p>
+<ul class="simple">
+<li>prometheus</li>
+</ul>
+<p>Prometheus est une boîte à outils de monitoring et d’alerte.
+Il s’agit maintenant d’un projet Open Source autonome et maintenu indépendamment de toute entreprise.</p>
+<ul class="simple">
+<li>node-exporter / docker-exporter</li>
+</ul>
+<p>L’exportateur de Prometheus pour les métriques de matériel et d’OS exposées par les nœuds.</p>
+<div class="section" id="id1">
+<h3>Grafana<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://grafana.com">grafana</a></p>
+<p>Les noeuds et les conteneur sont ajoutés/supprimés automatiquement a la supervision</p>
+<img alt="infrastructure/../../_static/infrastructure/monit/grafana_1.png" src="infrastructure/../../_static/infrastructure/monit/grafana_1.png" />
+<img alt="infrastructure/../../_static/infrastructure/monit/grafana_2.png" src="infrastructure/../../_static/infrastructure/monit/grafana_2.png" />
+<img alt="infrastructure/../../_static/infrastructure/monit/grafana_3.png" src="infrastructure/../../_static/infrastructure/monit/grafana_3.png" />
+</div>
+</div>
+<div class="section" id="externe">
+<h2>Externe<a class="headerlink" href="#externe" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="cloud-weave">
+<h3>cloud weave<a class="headerlink" href="#cloud-weave" title="Permalink to this headline">¶</a></h3>
+<p>Vue des conteneurs</p>
+<img alt="infrastructure/../../_static/infrastructure/monit/scop_1.png" src="infrastructure/../../_static/infrastructure/monit/scop_1.png" />
+<p>Vue des connexions réseaux In/out</p>
+<img alt="infrastructure/../../_static/infrastructure/monit/scop_2.png" src="infrastructure/../../_static/infrastructure/monit/scop_2.png" />
+<p>Vue des docker-hosts</p>
+<img alt="infrastructure/../../_static/infrastructure/monit/scop_3.png" src="infrastructure/../../_static/infrastructure/monit/scop_3.png" />
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="loadBalancing.html" class="btn btn-neutral float-right" title="Load Balancing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="storage.html" class="btn btn-neutral" title="Stockage et réplication" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, ETF.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
