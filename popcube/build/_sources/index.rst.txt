@@ -17,9 +17,11 @@ Visual Planning est un outil développé par STILOG qui permet de paramétrer un
 Les membres du projet
 -------------------------
 
-  * Michel GRATIA -> Directeur des Services informatiques
-  * Julien GUY -> 
-  * Maxime CORDIER ->
+  * Michel GRATIA
+  * Julien GUY
+  * Maxime CORDIER
+
+Adresse mail du projet : support.vp@etf.fr
 
 .. toctree::
   :maxdepth: 3

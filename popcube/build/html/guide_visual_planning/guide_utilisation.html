@@ -98,11 +98,18 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="#choisir-son-planning">Choisir son planning</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#que-faire-une-fois-connecte">Que faire une fois connecté ?</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#se-deplacer-dans-les-differents-affichages">Se déplacer dans les différents affichages</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#filtrer-les-donnees">Filtrer les données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#que-faire-une-fois-connecte">Que faire une fois connecté ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#vocabulaire-visual-planning">Vocabulaire Visual Planning</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dimension">Dimension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rubrique">Rubrique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ressource">Ressource</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vue">Vue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#affichage">Affichage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#evenement">Evénement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#filtre">Filtre</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="#raccourcies-clavier">Raccourcies clavier</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Fonctionnalitées</span></p>
 <ul>
@@ -183,6 +190,15 @@
 <p>VPDesk est le lanceur de l’application visual planning.</p>
 <p>Pour le télécharger rendez vous ici : <a class="reference external" href="https://www.visual-planning.com/fr/accueil-espace-client/espace-clients-vpdesk">https://www.visual-planning.com/fr/accueil-espace-client/espace-clients-vpdesk</a></p>
 <p>Téléchargez la version windows et exécutez le fichier.</p>
+<p>Lorsque la fenêtre d’installation disparaît, vous devez lancer VPDesk avec l’icône sur votre bureau :</p>
+<img alt="../_images/vpdesk_ico.png" src="../_images/vpdesk_ico.png" />
+<p>Si vous n’avez pas l’icône sur votre bureau recherchez VPDesk dans la barre de recherche en bas à droite :</p>
+<img alt="../_images/search_vpdesk.png" src="../_images/search_vpdesk.png" />
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Si VPDesk n’est ni sur votre bureau ni dans la barre de recherche celui-ci s’est peut-être mal installé.
+<strong>Vérifier les étapes précédentes</strong></p>
+</div>
 </div>
 <div class="section" id="compte">
 <h2>Compte<a class="headerlink" href="#compte" title="Permalink to this headline">¶</a></h2>
@@ -203,16 +219,22 @@
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">Si vous n’avez pas encore de compte visual planning ou que vous ne vous souvenez plus de votre mot de passe contactez : <a class="reference external" href="mailto:vp&#46;support&#37;&#52;&#48;etf&#46;fr">vp<span>&#46;</span>support<span>&#64;</span>etf<span>&#46;</span>fr</a></p>
+<dl class="last docutils">
+<dt>Si vous n’avez pas encore de compte visual planning ou que vous ne vous souvenez plus de votre mot de passe contactez :</dt>
+<dd><ul class="first last simple">
+<li>Maxime CORDIER : <a class="reference external" href="mailto:maxime&#46;cordier&#37;&#52;&#48;etf&#46;fr">maxime<span>&#46;</span>cordier<span>&#64;</span>etf<span>&#46;</span>fr</a></li>
+<li>Julien GUY : <a class="reference external" href="mailto:julien&#46;guy&#37;&#52;&#48;etf&#46;fr">julien<span>&#46;</span>guy<span>&#64;</span>etf<span>&#46;</span>fr</a></li>
+</ul>
+</dd>
+</dl>
 </div>
 </div>
 </div>
 <div class="section" id="choisir-son-planning">
 <h1>Choisir son planning<a class="headerlink" href="#choisir-son-planning" title="Permalink to this headline">¶</a></h1>
-<p>Lors de votre première connexion visual planning vous demandera de sélectionner un planning. Sélectionnez le planning de votre choix.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<ul class="last simple">
+<p>Lors de votre première connexion visual planning vous demandera de sélectionner un planning. Sélectionnez le planning selon vos besoins :</p>
+<blockquote>
+<div><ul class="simple">
 <li><dl class="first docutils">
 <dt>ETF_OFFICIEL_V3 :</dt>
 <dd><ul class="first last">
@@ -233,20 +255,221 @@
 </dl>
 </li>
 </ul>
-</div>
+</div></blockquote>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">Les autres planning sont des plannings de test et de développement. Aucune données ne pourra être récupérée de ces plannings</p>
+<p class="last">Les autres planning visibles sont des plannings de test et de développement. Aucune données ne pourra être récupérée de ces plannings</p>
 </div>
 </div>
 <div class="section" id="que-faire-une-fois-connecte">
 <h1>Que faire une fois connecté ?<a class="headerlink" href="#que-faire-une-fois-connecte" title="Permalink to this headline">¶</a></h1>
 <p>Une fois la barre de chargement disparu, vous devez demander à Visual Planning de vous afficher des données.</p>
-<div class="section" id="se-deplacer-dans-les-differents-affichages">
-<h2>Se déplacer dans les différents affichages<a class="headerlink" href="#se-deplacer-dans-les-differents-affichages" title="Permalink to this headline">¶</a></h2>
+<p>Cliquez sur l’onglet <code class="docutils literal notranslate"><span class="pre">Affichage</span></code> en haut puis selectionnez un affichage dans la liste des affichages :</p>
+<img alt="../_images/affichages.png" src="../_images/affichages.png" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Lorsque vous femerez Visual Planning (avec la croix rouge en haut à droite), celui-ci se souviendra du dernier planning et affichage ouvert.</p>
 </div>
-<div class="section" id="filtrer-les-donnees">
-<h2>Filtrer les données<a class="headerlink" href="#filtrer-les-donnees" title="Permalink to this headline">¶</a></h2>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Si vous restez trop longtemps inactif sur Visual Planning (environt 30min d’inactivité) celui-ci vous deconnectera et ne se souviendra pas de votre dernier planning ou affichage.</p>
+</div>
+<p>Pour le reste des fonctionnalités, référez vous au différentes documentations disponibles.</p>
+</div>
+<div class="section" id="vocabulaire-visual-planning">
+<h1>Vocabulaire Visual Planning<a class="headerlink" href="#vocabulaire-visual-planning" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="dimension">
+<h2>Dimension<a class="headerlink" href="#dimension" title="Permalink to this headline">¶</a></h2>
+<p>Une <code class="docutils literal notranslate"><span class="pre">dimension</span></code> est une table de données. Il existe une <code class="docutils literal notranslate"><span class="pre">dimension</span></code> pour chaque “type” de données :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Dimension</span> <span class="s2">&quot;PERSONNELS&quot;</span> <span class="p">:</span> <span class="n">Regroupe</span> <span class="n">les</span> <span class="n">collaborateurs</span>
+<span class="n">Dimension</span> <span class="s2">&quot;ABSENCES&quot;</span> <span class="p">:</span> <span class="n">Regroupe</span> <span class="n">les</span> <span class="n">absences</span>
+<span class="n">Dimension</span> <span class="s2">&quot;CHANTIERS&quot;</span> <span class="p">:</span> <span class="n">Regroupe</span> <span class="n">les</span> <span class="n">chantiers</span>
+</pre></div>
+</div>
+<p>On peut comparer la dimension a un tableau Excel.</p>
+</div>
+<div class="section" id="rubrique">
+<h2>Rubrique<a class="headerlink" href="#rubrique" title="Permalink to this headline">¶</a></h2>
+<p>Cette <code class="docutils literal notranslate"><span class="pre">dimension</span></code> est constituée de <code class="docutils literal notranslate"><span class="pre">rubriques</span></code>.</p>
+<dl class="docutils">
+<dt>Ces rubriques peuvent-être de différentes forment comme :</dt>
+<dd><ul class="first last simple">
+<li>Du texte à remplir</li>
+<li>Des fichiers à attacher</li>
+<li>Des cases à cocher</li>
+</ul>
+</dd>
+</dl>
+<p>Exemple avec la dimension PERSONNEL :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Rubrique</span> <span class="s2">&quot;Nom - Prénom&quot;</span> <span class="n">contient</span> <span class="n">le</span> <span class="n">nom</span> <span class="n">et</span> <span class="n">le</span> <span class="n">prénom</span> <span class="n">de</span> <span class="n">la</span> <span class="n">personne</span>
+<span class="n">Rubrique</span> <span class="s2">&quot;Parti&quot;</span> <span class="n">permet</span> <span class="n">de</span> <span class="n">coché</span> <span class="n">si</span> <span class="n">la</span> <span class="n">ressource</span> <span class="n">est</span> <span class="n">partie</span>
+<span class="n">Rubrique</span> <span class="s2">&quot;Photo&quot;</span> <span class="n">contient</span> <span class="n">une</span> <span class="n">image</span>
+</pre></div>
+</div>
+<p>Une <code class="docutils literal notranslate"><span class="pre">rubrique</span></code> peut-être comparée à une colonne d’un tableau Excel</p>
+</div>
+<div class="section" id="ressource">
+<h2>Ressource<a class="headerlink" href="#ressource" title="Permalink to this headline">¶</a></h2>
+<p>Une <code class="docutils literal notranslate"><span class="pre">ressource</span></code> est un item de la dimension.</p>
+<p>Maxime CORDIER est une ressource et ces informations sont :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Nom - Prénom&quot;</span> <span class="p">:</span> <span class="n">Maxime</span> <span class="n">CORDIER</span>
+<span class="s2">&quot;Parti&quot;</span> <span class="p">:</span> <span class="n">Non</span> <span class="n">coché</span>
+<span class="s2">&quot;Photo&quot;</span> <span class="p">:</span> <span class="n">Une</span> <span class="n">photo</span> <span class="n">de</span> <span class="n">Maxime</span> <span class="n">CORDIER</span>
+</pre></div>
+</div>
+<p>Une <code class="docutils literal notranslate"><span class="pre">ressource</span></code> peut être comparée à une ligne rempli d’un tableau Excel</p>
+</div>
+<div class="section" id="vue">
+<h2>Vue<a class="headerlink" href="#vue" title="Permalink to this headline">¶</a></h2>
+<p>Une <code class="docutils literal notranslate"><span class="pre">vue</span></code> est une façon d’afficher et de mettre en forme les données visuelement.</p>
+<p>Il existe différents types de <code class="docutils literal notranslate"><span class="pre">vues</span></code> selon leurs utilités :</p>
+<blockquote>
+<div><ul>
+<li><p class="first">Vue ressource : C’est une liste de <code class="docutils literal notranslate"><span class="pre">ressource</span></code> de la <code class="docutils literal notranslate"><span class="pre">dimension</span></code> choisie.</p>
+<blockquote>
+<div><img alt="../_images/vue_ressource_personnel.png" src="../_images/vue_ressource_personnel.png" />
+</div></blockquote>
+</li>
+<li><dl class="first docutils">
+<dt>Vue planning <span class="classifier-delimiter">:</span> <span class="classifier">C’est le planning lié à la dimensions choisie.</span></dt>
+<dd><ul class="first simple">
+<li>A gauche une liste de ressources</li>
+<li>A droite un planning</li>
+</ul>
+<img alt="../_images/vue_planning_explication.png" class="last" src="../_images/vue_planning_explication.png" />
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Vous retrouvez le nom de la <code class="docutils literal notranslate"><span class="pre">dimension</span></code> à laquelle la <code class="docutils literal notranslate"><span class="pre">vue</span></code> est liée en regardant en haut à gauche de la <code class="docutils literal notranslate"><span class="pre">vue</span></code>.</p>
+</div>
+</div>
+<div class="section" id="affichage">
+<h2>Affichage<a class="headerlink" href="#affichage" title="Permalink to this headline">¶</a></h2>
+<p>Un <code class="docutils literal notranslate"><span class="pre">affichage</span></code> est un ensemble de <code class="docutils literal notranslate"><span class="pre">vue</span></code> dont la mise en forme a été sauvegardée.</p>
+<p>Elle peut-être <code class="docutils literal notranslate"><span class="pre">public</span></code> (Tous le monde peut y avoir accès) ou <code class="docutils literal notranslate"><span class="pre">privée</span></code> uniquement vous pouvez y avoir accès.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Tous les affichages commençant par “_” (Exemple : _Planification) sont des affichages publics à tout ETF.</p>
+<p class="last">Tous les affichages commançant par un Code Secteur “MUXXXX” ou un Code Agence “ACXXXX” (Exemple : MU3939 - Planification) sont des affichages public uniquement de le secteur ou l’agence concerné.</p>
+</div>
+<p><strong>Le nom d’un affichage correspond, dans la plupart des cas, aux actions qu’il est possible de réaliser dessus.</strong></p>
+</div>
+<div class="section" id="evenement">
+<h2>Evénement<a class="headerlink" href="#evenement" title="Permalink to this headline">¶</a></h2>
+<p>Un événement est une liaison entre deux ressources de dimensions différentes à des dates.</p>
+<p>Une absence est un événement contenant :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Une</span> <span class="n">ressource</span> <span class="s2">&quot;ABSENCE&quot;</span> <span class="p">:</span> <span class="s2">&quot;Congé&quot;</span>
+<span class="n">Une</span> <span class="n">ressource</span> <span class="s2">&quot;PERSONNEL&quot;</span> <span class="p">:</span> <span class="s2">&quot;Maxime CORDIER&quot;</span>
+<span class="s2">&quot;Date de début d&#39;événement&quot;</span> <span class="p">:</span> <span class="s2">&quot;01/01/2010&quot;</span>
+<span class="s2">&quot;Date de fin d&#39;événement&quot;</span> <span class="p">:</span> <span class="s2">&quot;08/01/2010&quot;</span>
+</pre></div>
+</div>
+<p>Un événement apparaît sur une vue planning comme une barre qui commence à la date de début et qui finit à la date de fin.</p>
+</div>
+<div class="section" id="filtre">
+<h2>Filtre<a class="headerlink" href="#filtre" title="Permalink to this headline">¶</a></h2>
+<p>La force de Visual Planning réside dans sa possibilité à filtrer toutes les vues.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Par défaut la plupart des vues sont filtrer sur les ressources de vos droits secteurs.</p>
+</div>
+<dl class="docutils">
+<dt>Sur des vue qui ne contiennent que des ressources, il y a deux niveaux de filtre :</dt>
+<dd><ul class="first last simple">
+<li>Niveau 1 (Qui a pour libellé le nom de la dimension sur laquelle la vue est): Liste de filtres défini</li>
+<li>Niveau 2 (Filtre rapide): Filtre sur les différentes rubrique qui composent la dimension.</li>
+</ul>
+</dd>
+</dl>
+<p>Pour changer les filtre, cliquez sur les listes déroulantes à côté.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>Le filtre de <strong>niveau 1</strong> est toujours plus restricif que les filtres rapide.</p>
+<p class="last">Si le filtre de <code class="docutils literal notranslate"><span class="pre">niveau</span> <span class="pre">1</span></code> est : “_Personnel de mon secteur” (qui n’affiche que le personnel selon mes droits secteurs) et que je cherche à aller voir un autre secteur,
+il faut le définir en <code class="docutils literal notranslate"><span class="pre">filtre</span> <span class="pre">rapide</span></code> et changer le filtre de <code class="docutils literal notranslate"><span class="pre">niveau</span> <span class="pre">1</span></code> par un filtre mon restricitif.</p>
+</div>
+<dl class="docutils">
+<dt>Sur des vues qui contiennent des événements, il y a deux niveaux de filtre pour les ressources et deux niveaux de filtre pour les événement :</dt>
+<dd><ul class="first last simple">
+<li><dl class="first docutils">
+<dt>Filtre des ressources <span class="classifier-delimiter">:</span> <span class="classifier">(Comme sur une vue ressource)</span></dt>
+<dd><ul class="first last">
+<li>Niveau 1 : Liste de filtres défini</li>
+<li>Niveau 2 : Filtre sur les différentes rubrique qui composent la dimension.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Filtre d’évenemement :</dt>
+<dd><ul class="first last">
+<li>Niveau 1 (Libellé : événement): Liste de filtre défini</li>
+<li>Niveau 2 (Filtre rapide): Filtre sur les différentes dimensions</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Le filtre de moin restrictif de Visual Planning est le filtre <code class="docutils literal notranslate"><span class="pre">(Tous)</span></code></p>
+</div>
+</div>
+</div>
+<div class="section" id="raccourcies-clavier">
+<h1>Raccourcies clavier<a class="headerlink" href="#raccourcies-clavier" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="77%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Touche</th>
+<th class="head">Action</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>CTRL + C</td>
+<td>Copier</td>
+</tr>
+<tr class="row-odd"><td>CTRL + V</td>
+<td>Coller</td>
+</tr>
+<tr class="row-even"><td>CTRL + X</td>
+<td>Couper</td>
+</tr>
+<tr class="row-odd"><td>CTRL + Z</td>
+<td>Retour arrière</td>
+</tr>
+<tr class="row-even"><td>CTRL + Y</td>
+<td>Retour avant</td>
+</tr>
+<tr class="row-odd"><td>CTRL + A</td>
+<td>Selectionner tout</td>
+</tr>
+<tr class="row-even"><td>CTRL + CLIQUE GAUCHE</td>
+<td>Sélection multiple individuel</td>
+</tr>
+<tr class="row-odd"><td>MAJUSCULE + CLIQUE GAUCHE</td>
+<td>Sélection multiple du premier élément selectionné au dernier</td>
+</tr>
+<tr class="row-even"><td>GLISSER/DEPOSER</td>
+<td>Créer un événement avec la ressource tenue en souris</td>
+</tr>
+<tr class="row-odd"><td>GLISSER/DEPOSER + CTRL</td>
+<td>Ajouter/modifier a un événement déjà existant le ressource tenue en souris</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Lors d’une sélection multiple, il faut faire : CLIQUE DROIT pour ouvrir le menu puis cliquer sur modifier pour tout modifier en même temps.</p>
 </div>
 </div>
 
