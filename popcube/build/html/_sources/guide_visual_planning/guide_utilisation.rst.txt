@@ -181,25 +181,25 @@ Filtre
 La force de Visual Planning réside dans sa possibilité à filtrer toutes les vues.
 
 .. note::
-    Par défaut la plupart des vues sont filtrer sur les ressources de vos droits secteurs.
+    Par défaut la plupart des vues sont filtrée sur les ressources de vos droits secteurs.
 
 Sur des vue qui ne contiennent que des ressources, il y a deux niveaux de filtre :
-    - Niveau 1 (Qui a pour libellé le nom de la dimension sur laquelle la vue est): Liste de filtres défini
+    - Niveau 1 (Libellé : nom de la dimension): Liste de filtres défini
     - Niveau 2 (Filtre rapide): Filtre sur les différentes rubrique qui composent la dimension.
 
 Pour changer les filtre, cliquez sur les listes déroulantes à côté.
 
 .. warning::
-    Le filtre de **niveau 1** est toujours plus restricif que les filtres rapide.
+    Le filtre de ``niveau 1`` est toujours plus restricif que les filtres rapide.
 
-    Si le filtre de ``niveau 1`` est : "_Personnel de mon secteur" (qui n'affiche que le personnel selon mes droits secteurs) et que je cherche à aller voir un autre secteur,
+    Si le filtre de ``niveau 1`` est : ``_Personnel de mon secteur`` (qui n'affiche que le personnel selon mes droits secteurs) et que je cherche à aller voir un autre secteur,
     il faut le définir en ``filtre rapide`` et changer le filtre de ``niveau 1`` par un filtre mon restricitif.
 
 Sur des vues qui contiennent des événements, il y a deux niveaux de filtre pour les ressources et deux niveaux de filtre pour les événement :
     - Filtre des ressources : (Comme sur une vue ressource)
         - Niveau 1 : Liste de filtres défini
         - Niveau 2 : Filtre sur les différentes rubrique qui composent la dimension.
-    - Filtre d'évenemement :
+    - Filtre d'événemement :
         - Niveau 1 (Libellé : événement): Liste de filtre défini
         - Niveau 2 (Filtre rapide): Filtre sur les différentes dimensions
 
@@ -234,4 +234,4 @@ GLISSER/DEPOSER + CTRL          Ajouter/modifier a un événement déjà existan
 ===========================     ============================================================================================
 
 .. note::
-    Lors d'une sélection multiple, il faut faire : CLIQUE DROIT pour ouvrir le menu puis cliquer sur modifier pour tout modifier en même temps.
+    Lors d'une sélection multiple, il faut faire : **cliquer avec boutton droit** pour ouvrir le menu puis **cliquer sur modifier** pour tout modifier en même temps.

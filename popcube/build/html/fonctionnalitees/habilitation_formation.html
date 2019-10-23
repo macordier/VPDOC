@@ -95,17 +95,18 @@
 <li class="toctree-l1"><a class="reference internal" href="../guide_visual_planning/guide_utilisation.html">Comment se connecter ?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guide_visual_planning/guide_utilisation.html#choisir-son-planning">Choisir son planning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guide_visual_planning/guide_utilisation.html#que-faire-une-fois-connecte">Que faire une fois connecté ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide_visual_planning/guide_utilisation.html#vocabulaire-visual-planning">Vocabulaire Visual Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide_visual_planning/guide_utilisation.html#raccourcies-clavier">Raccourcies clavier</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Fonctionnalitées</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="import_automatique.html">Import Automatique</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Habilitation et formation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#preambule">Préambule</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#documentation-supplementaire-a-voir">Documentation supplémentaire à voir</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pourquoi-renseigner-les-habilitations-sur-visual-planning">Pourquoi renseigner les habilitations sur Visual Planning ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#documentations-reliees">Documentations reliées</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#habilitation">Habilitation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#presentation-de-la-gestion-des-habilitations">Présentation de la gestion des habilitations</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#l-affichage">L’affichage</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#planning-des-habilitations-du-personnel">Planning des habilitations du personnel</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#liste-des-evenements-habilitations">Liste des événements habilitations</a></li>
@@ -116,6 +117,7 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#pas-a-pas">Pas à Pas</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="vbadge.html">Vbadge</a></li>
@@ -191,41 +193,45 @@
 <div class="section" id="preambule">
 <h2>Préambule<a class="headerlink" href="#preambule" title="Permalink to this headline">¶</a></h2>
 <p>Sur Visual Planning la formation et l’habilitation <strong>sont deux événements distinct</strong>.</p>
-<p>La formation se planifie sur un planning pour “bloquer” les dates et heures de formations de la même manière qu’une planification de chantier ou d’absence.</p>
-<p>A la fin de la formation celle-ci peut-être habilitante : cette habilitation doit être ajoutée manuellement sur la personne.</p>
-<p>Les habilitations sont attachées à la personne, en cas de retour d’une ressource ou d’une mutation celle-ci récupère les habilitations déjà renseignées.</p>
-<div class="section" id="documentation-supplementaire-a-voir">
-<h3>Documentation supplémentaire à voir<a class="headerlink" href="#documentation-supplementaire-a-voir" title="Permalink to this headline">¶</a></h3>
-<p>Comment filtrer</p>
-</div>
-<div class="section" id="pourquoi-renseigner-les-habilitations-sur-visual-planning">
-<h3>Pourquoi renseigner les habilitations sur Visual Planning ?<a class="headerlink" href="#pourquoi-renseigner-les-habilitations-sur-visual-planning" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>Chaque secteur ou agence utilisait leur propre solution de suivi dont certaines nécessitait un maintenance lourde et manuelle.</li>
-<li>Une base de données communes pour ETF permet de croiser les données.</li>
-<li>Au 1er janvier 2020, l’accueil site ou “SECUFER” doit être opérationnel. La dématérialisation de cet accueil site nécessite de pouvoir controler les habilitations de manière beaucoup plus efficace sur les chantier.</li>
-<li>Arriver à la dématérialisation des cartes d’habilitations</li>
+<p><strong>La formation</strong> se planifie sur un planning pour “bloquer” les dates et heures de formations de la même manière qu’une planification de chantier ou d’absence.</p>
+<p>A la fin de la formation celle-ci peut-être <strong>habilitante</strong> : cette habilitation doit être ajoutée manuellement sur la personne.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<dl class="docutils">
+<dt>Les habilitations peuvent être ajoutées sur tout le personnel renseignés dans Visual Planning, cependant il existe deux sortes de personnels :</dt>
+<dd><ul class="first last simple">
+<li>Le personnel créé manuellement (L’ID VINCI commence par U)</li>
+<li>Le personnel importé de Kheops (L’ID VINCI normal)</li>
 </ul>
+</dd>
+</dl>
+<p class="last">Vous aurez, lors de la planification d’habilitation sur le personnel créé manuellement, une alerte vous expliquant que
+“Toute personne créée manuellement ne pourra pas avoir de badge VBadge”.
+Pour plus d’information, veuillez vous référez au <strong>Rapprochement</strong> :</p>
+</div>
+<div class="section" id="documentations-reliees">
+<h3>Documentations reliées<a class="headerlink" href="#documentations-reliees" title="Permalink to this headline">¶</a></h3>
+<p>Comment filtrer
+Import automatique
+Rapprochement</p>
 </div>
 </div>
-<div class="section" id="habilitation">
-<h2>Habilitation<a class="headerlink" href="#habilitation" title="Permalink to this headline">¶</a></h2>
-<p>Les fonctionnalités de gestions des habilitations et formations se trouvent sur le planning <code class="docutils literal notranslate"><span class="pre">ETF_OFFICIEL_V3</span></code></p>
+<div class="section" id="presentation-de-la-gestion-des-habilitations">
+<h2>Présentation de la gestion des habilitations<a class="headerlink" href="#presentation-de-la-gestion-des-habilitations" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="l-affichage">
 <h3>L’affichage<a class="headerlink" href="#l-affichage" title="Permalink to this headline">¶</a></h3>
 <p>Rendez-vous sur l’onglet <code class="docutils literal notranslate"><span class="pre">affichage</span></code> puis dans la liste des affichages cherchez : <code class="docutils literal notranslate"><span class="pre">_Gestion</span> <span class="pre">habilitation</span> <span class="pre">personnel</span></code></p>
 <p>Vous arriverez sur cet affichage :</p>
-<img alt="../_images/affichage_gestion_habilitation.png" src="../_images/affichage_gestion_habilitation.png" />
+<img alt="../_images/affichage_habilitation_personnel_indications_vues.png" src="../_images/affichage_habilitation_personnel_indications_vues.png" />
 <p>Cet affichage est découpé en 5 vues :</p>
 <div class="section" id="planning-des-habilitations-du-personnel">
 <h4>Planning des habilitations du personnel<a class="headerlink" href="#planning-des-habilitations-du-personnel" title="Permalink to this headline">¶</a></h4>
 <img alt="../_images/planning_habilitation.png" src="../_images/planning_habilitation.png" />
-<dl class="docutils">
-<dt>Sur cette vue vous retrouvez :</dt>
-<dd><ul class="first last simple">
-<li><dl class="first docutils">
+<p>Vous y retrouvez :</p>
+<blockquote>
+<div><dl class="docutils">
 <dt>Les informations de votre personnels :</dt>
-<dd><ul class="first last">
+<dd><ul class="first last simple">
 <li>Photo</li>
 <li>Matricule (Eurovia)</li>
 <li>Nom - Prénom</li>
@@ -233,14 +239,14 @@
 </ul>
 </dd>
 </dl>
-</li>
-<li>Le planning des habilitations pour pouvoir modifier ou ajouter une habilitation</li>
+<p>Le planning des habilitations pour pouvoir modifier ou ajouter une habilitation</p>
+</div></blockquote>
+<ul class="simple">
+<li>Lorsque vous double cliquez sur une personne dans la liste, vous ouvrez <strong>l’éditeur de personnel</strong></li>
+<li>Lorsque vous double cliquez sur un événement sur le planning, vous ouvrez <strong>l’éditeur d’habilitation</strong></li>
 </ul>
-</dd>
-</dl>
 <div class="section" id="editeur-personnel">
 <h5>Editeur personnel<a class="headerlink" href="#editeur-personnel" title="Permalink to this headline">¶</a></h5>
-<p><strong>Double cliquer</strong> sur une personne pour ouvrir sa fiche :</p>
 <p>Pour modifier les informations de la personne : Onglet <code class="docutils literal notranslate"><span class="pre">Information</span></code></p>
 <img alt="../_images/fiche_personne.png" src="../_images/fiche_personne.png" />
 <p>Pour voir les habilitations suivies sous forme de liste : Onglet <code class="docutils literal notranslate"><span class="pre">Habilitations</span></code></p>
@@ -255,7 +261,7 @@
 <p><strong>Double cliquer</strong> sur un événement dans le planning ou dans l’onglet <code class="docutils literal notranslate"><span class="pre">habilitation</span></code> de la personne ouvre son éditeur :</p>
 <img alt="../_images/editeur_evenement_habilitation.png" src="../_images/editeur_evenement_habilitation.png" />
 <dl class="docutils">
-<dt>Les informations que vous êtes les plus a mêmes de modifier sont :</dt>
+<dt>Exemples de modifications :</dt>
 <dd><ul class="first last simple">
 <li>La date de début de l’habilitation</li>
 <li>La date de fin de l’habilitation</li>
@@ -414,7 +420,7 @@
 <p class="first admonition-title">Note</p>
 <ul class="last simple">
 <li>Le seul statut que vous pouvez positionner manuellement est le statut <code class="docutils literal notranslate"><span class="pre">Suspendu</span></code> qui permet  de notifier que la personne est suspendu sur cet habilitaiton.</li>
-<li>Les autres statuts sont automatique</li>
+<li>Les autres statuts sont automatiques</li>
 </ul>
 </div>
 </div>
@@ -466,6 +472,10 @@ d’alerte vous indiquant que celle-ci n’apparaîtra pas dans VBADGE : Aller v
 </div></blockquote>
 </div>
 </div>
+</div>
+<div class="section" id="pas-a-pas">
+<h2>Pas à Pas<a class="headerlink" href="#pas-a-pas" title="Permalink to this headline">¶</a></h2>
+<p>iuhhojij</p>
 </div>
 </div>
 

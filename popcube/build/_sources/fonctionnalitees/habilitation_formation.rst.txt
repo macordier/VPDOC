@@ -7,24 +7,15 @@ Préambule
 
 Sur Visual Planning la formation et l'habilitation **sont deux événements distinct**.
 
-La formation se planifie sur un planning pour "bloquer" les dates et heures de formations de la même manière qu'une planification de chantier ou d'absence.
+**La formation** se planifie sur un planning pour "bloquer" les dates et heures de formations de la même manière qu'une planification de chantier ou d'absence.
 
-A la fin de la formation celle-ci peut-être habilitante : cette habilitation doit être ajoutée manuellement sur la personne.
+A la fin de la formation celle-ci peut-être **habilitante** : cette habilitation doit être ajoutée manuellement sur la personne.
 
-Les habilitations sont attachées à la personne, en cas de retour d'une ressource ou d'une mutation celle-ci récupère les habilitations déjà renseignées.
 
 Documentation supplémentaire à voir
 ***********************************
 
 Comment filtrer
-
-Pourquoi renseigner les habilitations sur Visual Planning ?
-***********************************************************
-
-- Chaque secteur ou agence utilisait leur propre solution de suivi dont certaines nécessitait un maintenance lourde et manuelle.
-- Une base de données communes pour ETF permet de croiser les données.
-- Au 1er janvier 2020, l'accueil site ou "SECUFER" doit être opérationnel. La dématérialisation de cet accueil site nécessite de pouvoir controler les habilitations de manière beaucoup plus efficace sur les chantier.
-- Arriver à la dématérialisation des cartes d'habilitations
 
 Habilitation
 -------------
@@ -48,13 +39,13 @@ Planning des habilitations du personnel
 .. image:: ../_static/fonctionnalitees/habilitation_formation/planning_habilitation.png
 
 
-Sur cette vue vous retrouvez :
-    - Les informations de votre personnels :
-        - Photo
-        - Matricule (Eurovia)
-        - Nom - Prénom
-        - Qualification de bulletin
-    - Le planning des habilitations pour pouvoir modifier ou ajouter une habilitation
+Les informations de votre personnels :
+    - Photo
+    - Matricule (Eurovia)
+    - Nom - Prénom
+    - Qualification de bulletin
+
+Le planning des habilitations pour pouvoir modifier ou ajouter une habilitation
 
 Editeur personnel
 $$$$$$$$$$$$$$$$$
@@ -84,7 +75,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 .. image:: ../_static/fonctionnalitees/habilitation_formation/editeur_evenement_habilitation.png
 
-Les informations que vous êtes les plus a mêmes de modifier sont :
+Exemples de modifications :
     - La date de début de l'habilitation
     - La date de fin de l'habilitation
     - La note
@@ -154,7 +145,7 @@ Liste des statuts
 
 .. note::
     - Le seul statut que vous pouvez positionner manuellement est le statut ``Suspendu`` qui permet  de notifier que la personne est suspendu sur cet habilitaiton.
-    - Les autres statuts sont automatique
+    - Les autres statuts sont automatiques
 
 Liste des habilitations
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -188,3 +179,8 @@ Tableau de suivi des habilitations
         | Utiliser les filtres pour épurer le tableau.
         | Exemple 1 : ``Recyclage : Non`` si vous ne voulez pas voir les habilitations ne nécessitant pas de recyclage
         | Exemple 2 : ``_Choix de l'habilitation`` permet de choisir uniquement une habilitation
+
+Que dois-je faire ?
+===================
+
+iuhhojij
