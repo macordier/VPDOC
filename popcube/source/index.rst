@@ -3,14 +3,14 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-######################################################
-Bienvenue sur la documentation de Visual Planning !
-######################################################
+#################################################
+Bienvenue sur la documentation de Visual Planning
+#################################################
 
 .. _Read the docs: http://readthedocs.org/]
 
 Introduction
-==============
+============
 
 Visual Planning est un outil développé par STILOG qui permet de paramétrer un planning visuel en fonction des besoins d'une société.
 
