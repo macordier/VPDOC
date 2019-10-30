@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Habilitation et formation &mdash; Visual Planning 0.1 documentation</title>
+  <title>Habilitation et Formation &mdash; Visual Planning 0.1 documentation</title>
   
 
   
@@ -101,7 +101,7 @@
 <p class="caption"><span class="caption-text">Fonctionnalitées</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="import_automatique.html">Import Automatique</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Habilitation et formation</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Habilitation et Formation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#preambule">Préambule</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#documentations-reliees">Documentations reliées</a></li>
 </ul>
@@ -109,7 +109,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#presentation-de-la-gestion-des-habilitations">Présentation de la gestion des habilitations</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#l-affichage">L’affichage</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#planning-des-habilitations-du-personnel">Planning des habilitations du personnel</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#liste-des-evenements-habilitations">Liste des événements habilitations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#liste-des-evenements-habilitation">Liste des événements habilitation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#liste-des-statuts">Liste des statuts</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#liste-des-habilitations">Liste des habilitations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tableau-de-suivi-des-habilitations">Tableau de suivi des habilitations</a></li>
@@ -169,7 +169,7 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>Habilitation et formation</li>
+      <li>Habilitation et Formation</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -189,25 +189,25 @@
            <div itemprop="articleBody">
             
   <div class="section" id="habilitation-et-formation">
-<h1>Habilitation et formation<a class="headerlink" href="#habilitation-et-formation" title="Permalink to this headline">¶</a></h1>
+<h1>Habilitation et Formation<a class="headerlink" href="#habilitation-et-formation" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="preambule">
 <h2>Préambule<a class="headerlink" href="#preambule" title="Permalink to this headline">¶</a></h2>
-<p>Sur Visual Planning la formation et l’habilitation <strong>sont deux événements distinct</strong>.</p>
-<p><strong>La formation</strong> se planifie sur un planning pour “bloquer” les dates et heures de formations de la même manière qu’une planification de chantier ou d’absence.</p>
-<p>A la fin de la formation celle-ci peut-être <strong>habilitante</strong> : cette habilitation doit être ajoutée manuellement sur la personne.</p>
+<p>Dans Visual Planning, la formation et l’habilitation <strong>sont gérées de manière distincte</strong> (2 types d’événement différents).</p>
+<p><strong>La formation</strong> se programme dans un planning pour “bloquer” les dates et les heures de formation (de la même manière qu’une planification sur chantier ou d’absence).</p>
+<p>Une formation pouvant être <strong>habilitante</strong>, il faudra donc ajouter cette habilitation manuellement sur la personne correspondante (ajout d’un événement d’habilitation).</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <dl class="docutils">
-<dt>Les habilitations peuvent être ajoutées sur tout le personnel renseignés dans Visual Planning, cependant il existe deux sortes de personnels :</dt>
+<dt>Les habilitations peuvent être ajoutées sur tout le personnel renseigné dans Visual Planning ; cependant, il existe deux sortes de personnel :</dt>
 <dd><ul class="first last simple">
-<li>Le personnel créé manuellement (L’ID VINCI commence par U)</li>
-<li>Le personnel importé de Kheops (L’ID VINCI normal)</li>
+<li>Le personnel créé manuellement (L’ID VINCI commence par la lettre U suivie de la MU d’affectation)</li>
+<li>Le personnel importé de Kheops (L’ID VINCI comprend 7 caractères, tel que défini sur Kheops)</li>
 </ul>
 </dd>
 </dl>
-<p class="last">Vous aurez, lors de la planification d’habilitation sur le personnel créé manuellement, une alerte vous expliquant que
-“Toute personne créée manuellement ne pourra pas avoir de badge VBadge”.
-Pour plus d’information, veuillez vous référez au <strong>Rapprochement</strong> :</p>
+<p class="last">Lors de l’ajout d’habilitation sur une personne créée manuellement, l’alerte suivante apparaîtra :
+“Toute personne créée manuellement ne pourra pas avoir de badge VBADGE”.
+Pour plus d’information à ce sujet, veuillez vous référer au paragraphe <strong>Rapprochement</strong> :</p>
 </div>
 <div class="section" id="documentations-reliees">
 <h3>Documentations reliées<a class="headerlink" href="#documentations-reliees" title="Permalink to this headline">¶</a></h3>
@@ -220,8 +220,8 @@ Rapprochement</p>
 <h2>Présentation de la gestion des habilitations<a class="headerlink" href="#presentation-de-la-gestion-des-habilitations" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="l-affichage">
 <h3>L’affichage<a class="headerlink" href="#l-affichage" title="Permalink to this headline">¶</a></h3>
-<p>Rendez-vous sur l’onglet <code class="docutils literal notranslate"><span class="pre">affichage</span></code> puis dans la liste des affichages cherchez : <code class="docutils literal notranslate"><span class="pre">_Gestion</span> <span class="pre">habilitation</span> <span class="pre">personnel</span></code></p>
-<p>Vous arriverez sur cet affichage :</p>
+<p>Rendez-vous sur l’onglet <code class="docutils literal notranslate"><span class="pre">Affichage</span></code> puis, dans la liste des <code class="docutils literal notranslate"><span class="pre">Affichages</span> <span class="pre">favoris</span></code>, sélectionnez : <code class="docutils literal notranslate"><span class="pre">_Gestion</span> <span class="pre">habilitation</span> <span class="pre">personnel</span></code>.</p>
+<p>Vous arrivez sur cet affichage :</p>
 <img alt="../_images/affichage_habilitation_personnel_indications_vues.png" src="../_images/affichage_habilitation_personnel_indications_vues.png" />
 <p>Cet affichage est découpé en 5 vues :</p>
 <div class="section" id="planning-des-habilitations-du-personnel">
@@ -230,35 +230,43 @@ Rapprochement</p>
 <p>Vous y retrouvez :</p>
 <blockquote>
 <div><dl class="docutils">
-<dt>Les informations de votre personnels :</dt>
+<dt>Les informations de votre personnel :</dt>
 <dd><ul class="first last simple">
 <li>Photo</li>
 <li>Matricule (Eurovia)</li>
-<li>Nom - Prénom</li>
+<li>NOM - Prénom</li>
 <li>Qualification de bulletin</li>
 </ul>
 </dd>
 </dl>
-<p>Le planning des habilitations pour pouvoir modifier ou ajouter une habilitation</p>
+<p>Le planning des habilitations pour pouvoir modifier ou ajouter une habilitation.</p>
 </div></blockquote>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>Il est important de vérifier ces informations car elles apparaitront sur le badge.</p>
+<p class="last"><strong>Toutes modifications entrainera l’impression d’un nouveau badge</strong></p>
+</div>
 <ul class="simple">
 <li>Lorsque vous double cliquez sur une personne dans la liste, vous ouvrez <strong>l’éditeur de personnel</strong></li>
-<li>Lorsque vous double cliquez sur un événement sur le planning, vous ouvrez <strong>l’éditeur d’habilitation</strong></li>
+<li>Lorsque vous double cliquez sur un événement dans le planning, vous ouvrez <strong>l’éditeur d’habilitation</strong></li>
 </ul>
-<div class="section" id="editeur-personnel">
-<h5>Editeur personnel<a class="headerlink" href="#editeur-personnel" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="editeur-de-personnel">
+<h5>Editeur de personnel<a class="headerlink" href="#editeur-de-personnel" title="Permalink to this headline">¶</a></h5>
 <p>Pour modifier les informations de la personne : Onglet <code class="docutils literal notranslate"><span class="pre">Information</span></code></p>
 <img alt="../_images/fiche_personne.png" src="../_images/fiche_personne.png" />
-<p>Pour voir les habilitations suivies sous forme de liste : Onglet <code class="docutils literal notranslate"><span class="pre">Habilitations</span></code></p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Pour voir les habilitations suivies sous forme de liste : Onglet <code class="docutils literal notranslate"><span class="pre">Habilitations</span></code></p>
+</div>
 <img alt="../_images/fiche_personne_habilitation.png" src="../_images/fiche_personne_habilitation.png" />
 <p>Voir les formations planifiées : Onglet <code class="docutils literal notranslate"><span class="pre">Formation</span></code></p>
 <img alt="../_images/fiche_personne_formation.png" src="../_images/fiche_personne_formation.png" />
 <p>Voir l’historique des habilitations : Onglet <code class="docutils literal notranslate"><span class="pre">Historique</span> <span class="pre">des</span> <span class="pre">habilitations</span></code></p>
 <img alt="../_images/fiche_personne_historique_habilitation.png" src="../_images/fiche_personne_historique_habilitation.png" />
 </div>
-<div class="section" id="editeur-evenement-habilitation">
-<h5>Editeur événement habilitation<a class="headerlink" href="#editeur-evenement-habilitation" title="Permalink to this headline">¶</a></h5>
-<p><strong>Double cliquer</strong> sur un événement dans le planning ou dans l’onglet <code class="docutils literal notranslate"><span class="pre">habilitation</span></code> de la personne ouvre son éditeur :</p>
+<div class="section" id="editeur-d-evenement-habilitation">
+<h5>Editeur d’événement habilitation<a class="headerlink" href="#editeur-d-evenement-habilitation" title="Permalink to this headline">¶</a></h5>
+<p><strong>Double cliquer</strong> sur un événement dans le planning ou dans l’onglet <code class="docutils literal notranslate"><span class="pre">Habilitation</span></code> de la personne ouvre son éditeur :</p>
 <img alt="../_images/editeur_evenement_habilitation.png" src="../_images/editeur_evenement_habilitation.png" />
 <dl class="docutils">
 <dt>Exemples de modifications :</dt>
@@ -269,7 +277,7 @@ Rapprochement</p>
 <dt>La note</dt>
 <dd><ul class="first last">
 <li><dl class="first docutils">
-<dt>Vous permet d’annoter une information non officiel sur cette habilitation</dt>
+<dt>Vous permet d’annoter une information non officielle sur cette habilitation</dt>
 <dd><ul class="first last">
 <li>Exemple 1 : Formation effectué le ….</li>
 <li>Exemple 2 : Recyclage demandé par … le …</li>
@@ -284,7 +292,7 @@ Rapprochement</p>
 <li><dl class="first docutils">
 <dt>Le numéro d’habilitation</dt>
 <dd><ul class="first last">
-<li>C’est le numéro de session ou numéro de l’habilitation communiqué par l’organisme</li>
+<li>C’est le numéro officiel de l’habilitation, communiqué par l’organisme correspondant</li>
 </ul>
 </dd>
 </dl>
@@ -293,10 +301,10 @@ Rapprochement</p>
 <dt>Les spécifications techniques</dt>
 <dd><ul class="first last">
 <li><dl class="first docutils">
-<dt>Vous permet de spécifier certaines options ou remarques faîtes concernant l’habilitation</dt>
+<dt>Vous permet de spécifier certaines options ou remarques faites concernant l’habilitation</dt>
 <dd><ul class="first last">
-<li>Exemple 1 : Restriction médical : Port de lunette</li>
-<li>Exemple 2 : Option</li>
+<li>Exemple 1 : Restriction médicale : Port de lunettes</li>
+<li>Exemple 2 : Zone géographique d’habilitation</li>
 </ul>
 </dd>
 </dl>
@@ -308,7 +316,7 @@ Rapprochement</p>
 <li><dl class="first docutils">
 <dt>Les documents joints</dt>
 <dd><ul class="first last">
-<li>Ces documents seront acceccible depuis VBADGE. (Pour plus d’information référé vous à la documentation VBADGE)</li>
+<li>Ces documents seront acceccibles depuis VBADGE. (Pour plus d’information, référez-vous à la documentation VBADGE)</li>
 </ul>
 </dd>
 </dl>
@@ -317,7 +325,7 @@ Rapprochement</p>
 <dt>La case à chocher ne plus suivre</dt>
 <dd><ul class="first last">
 <li><dl class="first docutils">
-<dt>Permet de ne plus suivre pas défaut cette habilitation</dt>
+<dt>Permet de ne plus suivre par défaut cette habilitation</dt>
 <dd><ul class="first last">
 <li>Cas 1 : Je souhaite faire dispaître cette habilitation de la fiche personne tout en gardant l’historique de celle-ci</li>
 <li>Cas 2 : L’habilitation est expirée et je ne veux pas la recycler</li>
@@ -334,13 +342,13 @@ Rapprochement</p>
 </dl>
 </div>
 </div>
-<div class="section" id="liste-des-evenements-habilitations">
-<h4>Liste des événements habilitations<a class="headerlink" href="#liste-des-evenements-habilitations" title="Permalink to this headline">¶</a></h4>
-<p>Par défaut cet affichage est trié avec le filtre : <code class="docutils literal notranslate"><span class="pre">_Habilitations</span> <span class="pre">qui</span> <span class="pre">vont</span> <span class="pre">être</span> <span class="pre">perdues</span></code> (Date de fin &lt; 3 mois)</p>
-<p>Cela vous permet d’identifier rapidement les habilitations qui nécessitent une attention.</p>
+<div class="section" id="liste-des-evenements-habilitation">
+<h4>Liste des événements habilitation<a class="headerlink" href="#liste-des-evenements-habilitation" title="Permalink to this headline">¶</a></h4>
+<p>Par défaut, cet affichage est configuré avec le filtre : <code class="docutils literal notranslate"><span class="pre">_Habilitations</span> <span class="pre">qui</span> <span class="pre">vont</span> <span class="pre">être</span> <span class="pre">perdues</span></code> (Date de fin &lt; 3 mois)</p>
+<p>Cela vous permet d’identifier rapidement les habilitations qui nécessitent une attention accrue.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last"><strong>Double cliquer</strong> sur une ligne du tableau ouvre l’éditeur de saisie d’événement habilitation.</p>
+<p class="last"><strong>Double cliquer</strong> sur une ligne du tableau ouvre l’éditeur de saisie d’événement habilitation</p>
 </div>
 <img alt="../_images/evenement_habilitation.png" src="../_images/evenement_habilitation.png" />
 <div class="admonition note">
@@ -376,7 +384,7 @@ Rapprochement</p>
 </tr>
 <tr class="row-even"><td>Entre 3 et 6 mois</td>
 <td><div class="first last line-block">
-<div class="line">mois &lt; Date de fin &lt; 6 mois</div>
+<div class="line">3 mois &lt; Date de fin &lt; 6 mois</div>
 </div>
 </td>
 </tr>
@@ -408,7 +416,7 @@ Rapprochement</p>
 </tr>
 <tr class="row-odd"><td colspan="2"><strong>Manuel</strong></td>
 </tr>
-<tr class="row-even"><td>Suspendu</td>
+<tr class="row-even"><td>Suspendue</td>
 <td><div class="first last line-block">
 <div class="line">Pour suspendre une habilitation</div>
 </div>
@@ -419,8 +427,8 @@ Rapprochement</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <ul class="last simple">
-<li>Le seul statut que vous pouvez positionner manuellement est le statut <code class="docutils literal notranslate"><span class="pre">Suspendu</span></code> qui permet  de notifier que la personne est suspendu sur cet habilitaiton.</li>
-<li>Les autres statuts sont automatiques</li>
+<li>Le seul statut que vous pouvez positionner manuellement est le statut <code class="docutils literal notranslate"><span class="pre">Suspendue</span></code>, qui permet de notifier que l’habilitation n’est plus active</li>
+<li>Les autres statuts sont gérés automatiquement par Visual Planning</li>
 </ul>
 </div>
 </div>
@@ -432,20 +440,20 @@ Rapprochement</p>
 </div></blockquote>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">Lorsque vous placer une habilitation sur une personne créée manuellement dans Visual Planning, vous aurez un message
-d’alerte vous indiquant que celle-ci n’apparaîtra pas dans VBADGE : Aller voir la section Vbadge</p>
+<p class="last">Lorsque vous placez une habilitation sur une personne créée manuellement dans Visual Planning, vous aurez un message
+d’alerte vous indiquant que celle-ci n’apparaîtra pas dans VBADGE : Aller voir la section <em>VBADGE</em>.</p>
 </div>
 <ul>
 <li><dl class="first docutils">
-<dt>Par défaut vous voyez dans cette vue :</dt>
+<dt>Par défaut, vous voyez dans cette vue :</dt>
 <dd><div class="first last line-block">
-<div class="line"><code class="docutils literal notranslate"><span class="pre">`Libellé</span> <span class="pre">de</span> <span class="pre">l'habilitation</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">Libellé</span> <span class="pre">de</span> <span class="pre">l'habilitation</span></code></div>
 <div class="line"><code class="docutils literal notranslate"><span class="pre">Libellé</span> <span class="pre">complet</span> <span class="pre">de</span> <span class="pre">l'habilitation</span></code>, <code class="docutils literal notranslate"><span class="pre">durée</span> <span class="pre">automatique</span> <span class="pre">lors</span> <span class="pre">de</span> <span class="pre">la</span> <span class="pre">planification</span></code>, <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">=</span> <span class="pre">sans</span> <span class="pre">recyclage</span> <span class="pre">|</span> <span class="pre">1</span> <span class="pre">=</span> <span class="pre">recyclage</span></code></div>
 </div>
 </dd>
 </dl>
 </li>
-<li><p class="first"><strong>Double cliquer</strong> sur une habilitation pour avoir plus d’informations sur celle-ci :</p>
+<li><p class="first"><strong>Double cliquer</strong> sur une habilitation pour avoir plus d’information sur celle-ci :</p>
 <blockquote>
 <div><img alt="../_images/editeur_habilitation.png" src="../_images/editeur_habilitation.png" />
 </div></blockquote>
@@ -456,7 +464,7 @@ d’alerte vous indiquant que celle-ci n’apparaîtra pas dans VBADGE : Aller v
 <h4>Tableau de suivi des habilitations<a class="headerlink" href="#tableau-de-suivi-des-habilitations" title="Permalink to this headline">¶</a></h4>
 <blockquote>
 <div><ul class="simple">
-<li>Permet d’avoir une vue global des habilitations de son périmètre</li>
+<li>Permet d’avoir une vue globale des habilitations de son périmètre</li>
 <li>Est affiché le nombre de jour restant avant recyclage</li>
 <li>Les couleurs correspondent aux statuts des autres vues</li>
 </ul>
@@ -465,8 +473,8 @@ d’alerte vous indiquant que celle-ci n’apparaîtra pas dans VBADGE : Aller v
 <p class="first admonition-title">Note</p>
 <div class="last line-block">
 <div class="line">Utiliser les filtres pour épurer le tableau.</div>
-<div class="line">Exemple 1 : <code class="docutils literal notranslate"><span class="pre">Recyclage</span> <span class="pre">:</span> <span class="pre">Non</span></code> si vous ne voulez pas voir les habilitations ne nécessitant pas de recyclage</div>
-<div class="line">Exemple 2 : <code class="docutils literal notranslate"><span class="pre">_Choix</span> <span class="pre">de</span> <span class="pre">l'habilitation</span></code> permet de choisir uniquement une habilitation</div>
+<div class="line">Exemple 1 : <code class="docutils literal notranslate"><span class="pre">Recyclage</span> <span class="pre">:</span> <span class="pre">Non</span></code> si vous ne voulez voir que les habilitations sans recyclage</div>
+<div class="line">Exemple 2 : <code class="docutils literal notranslate"><span class="pre">_Choix</span> <span class="pre">de</span> <span class="pre">l'habilitation</span></code> permet de filtrer sur une habilitation spécifique</div>
 </div>
 </div>
 </div></blockquote>
@@ -475,7 +483,7 @@ d’alerte vous indiquant que celle-ci n’apparaîtra pas dans VBADGE : Aller v
 </div>
 <div class="section" id="pas-a-pas">
 <h2>Pas à Pas<a class="headerlink" href="#pas-a-pas" title="Permalink to this headline">¶</a></h2>
-<p>iuhhojij</p>
+<p><strong>(à suivre)</strong></p>
 </div>
 </div>
 

@@ -57,6 +57,11 @@ Vous y retrouvez :
 
     Le planning des habilitations pour pouvoir modifier ou ajouter une habilitation.
 
+.. warning::
+    Il est important de vérifier ces informations car elles apparaitront sur le badge.
+
+    **Toutes modifications entrainera l'impression d'un nouveau badge**
+
 - Lorsque vous double cliquez sur une personne dans la liste, vous ouvrez **l'éditeur de personnel**
 - Lorsque vous double cliquez sur un événement dans le planning, vous ouvrez **l'éditeur d'habilitation**
 
@@ -191,8 +196,3 @@ Tableau de suivi des habilitations
         | Utiliser les filtres pour épurer le tableau.
         | Exemple 1 : ``Recyclage : Non`` si vous ne voulez voir que les habilitations sans recyclage
         | Exemple 2 : ``_Choix de l'habilitation`` permet de filtrer sur une habilitation spécifique
-
-Pas à Pas
----------
-
-**(à suivre)**
