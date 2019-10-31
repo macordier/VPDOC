@@ -7,23 +7,21 @@ Comment se connecter ?
 Installer VPDesk
 -----------------
 
-VPDesk est le lanceur de l'application visual planning.
+VPDesk est le lanceur de l'application Visual Planning.
 
-Pour le télécharger rendez vous ici : https://www.visual-planning.com/fr/accueil-espace-client/espace-clients-vpdesk
-
-Téléchargez la version windows et exécutez le fichier.
-
-Lorsque la fenêtre d'installation disparaît, vous devez lancer VPDesk avec l'icône sur votre bureau :
+Vous pouvez lancer VPDesk avec l'icône sur votre bureau :
 
 .. image:: ../_static/guide/vpdesk_ico.png
 
-Si vous n'avez pas l'icône sur votre bureau recherchez VPDesk dans la barre de recherche en bas à droite :
+Ou en recherchant VPDesk dans la barre de recherche en bas à droite :
 
 .. image:: ../_static/guide/search_vpdesk.png
 
+
 .. warning::
-    Si VPDesk n'est ni sur votre bureau ni dans la barre de recherche celui-ci s'est peut-être mal installé.
-    **Vérifier les étapes précédentes**
+    Si VPDesk n'est ni sur votre bureau ni dans la barre de recherche, téléchargez le ici : https://www.visual-planning.com/fr/accueil-espace-client/espace-clients-vpdesk
+
+    Téléchargez la version windows et exécutez le fichier.
 
 Compte
 ------
@@ -32,7 +30,7 @@ Votre identifiant est composé de la façon suivante : ::
 
     Première lettre du prénom + Nom
 
-Lors de votre première connexion laissez votre mot de passe vide, visual planning vous demandera d'en définir un pour votre compte.
+Lors de votre première connexion laissez votre mot de passe vide, Visual Planning vous demandera d'en définir un pour votre compte.
 
 Le mot de passe doit être composé de : ::
 
@@ -50,7 +48,7 @@ Le mot de passe doit être composé de : ::
 
 
 Choisir son planning
-===========================
+====================
 
 Lors de votre première connexion visual planning vous demandera de sélectionner un planning. Sélectionnez le planning selon vos besoins :
 
@@ -61,6 +59,7 @@ Lors de votre première connexion visual planning vous demandera de sélectionne
     - ETF_RAPPORT_V3 :
         - Rapport soudure et meulage
         - Plan de veille et gestion des KNs
+        - Autorisation d'accès aux emprises ferroviaires (SECUFER)
 
 .. warning::
     Les autres planning visibles sont des plannings de test et de développement. Aucune données ne pourra être récupérée de ces plannings
@@ -130,7 +129,7 @@ Une ``ressource`` peut être comparée à une ligne rempli d'un tableau Excel
 Vue
 ----
 
-Une ``vue`` est une façon d'afficher et de mettre en forme les données visuelement.
+Une ``vue`` est une façon d'afficher et de mettre en forme les données visuellement.
 
 Il existe différents types de ``vues`` selon leurs utilités :
 
