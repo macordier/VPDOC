@@ -33,6 +33,7 @@ Adresse mail du projet : support.vp@etf.fr
   :maxdepth: 3
   :caption: Fonctionnalitées
 
+  fonctionnalitees/creation_ressource
   fonctionnalitees/import_automatique
   fonctionnalitees/habilitation_formation
   fonctionnalitees/vbadge
