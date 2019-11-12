@@ -40,6 +40,14 @@ Adresse mail du projet : support.vp@etf.fr
 
 .. toctree::
   :maxdepth: 3
+  :caption: VPGO
+
+  VPGO/installation_vpgo
+  VPGO/utilisation_vpgo
+  VPGO/accueil_site_secufer
+
+.. toctree::
+  :maxdepth: 3
   :caption: Mises à jour
 
   maj/maj_30092019
