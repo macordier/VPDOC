@@ -37,6 +37,7 @@ Adresse mail du projet : support.vp@etf.fr
   fonctionnalitees/import_automatique
   fonctionnalitees/habilitation_formation
   fonctionnalitees/vbadge
+  fonctionnalitees/rapprochement
 
 .. toctree::
   :maxdepth: 3
