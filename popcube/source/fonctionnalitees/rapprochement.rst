@@ -51,18 +51,18 @@ Le rapprochement
     
     A partir d'aujourd'hui et après avoir rapproché tout le personnel possible, ce process est amené à faire le rapprochement des deux ressources dès l'importation de la personne KHEOPS. **Il n'y aura donc aucune données sur la personne KHEOPS**.
 
-1. Glisser / Déposer la personne créées manuellement de la vue de gauche sur une date sur le planning
+1. Glissez / Déposez la personne créées manuellement de la vue de gauche sur une date sur le planning
     - Peu importe la date
     - L'événement est bleu pour vous indiquez qu'il vient d'être créé et qu'il n'a pas encore d'ID VINCI attribué
 
     .. image:: ../_static/fonctionnalitees/rapprochement/nouveau_rapprochement.png
 
-2. Rechercher la même personne importées de KHEOPS dans la vue de droite
+2. Recherchez la même personne importées de KHEOPS dans la vue de droite
 3. Ouvrez sa fiche pour récupérer son ``ID VINCI``
 
     .. image:: ../_static/fonctionnalitees/rapprochement/fiche_personnel.png
 
-4. Copier cet ``ID VINCI`` et copiez le dans le champ ``ID VINCI`` de l'événement
+4. Copiez cet ``ID VINCI`` et copiez le dans le champ ``ID VINCI`` de l'événement
 
         .. image:: ../_static/fonctionnalitees/rapprochement/ev_rapprochement.png
 
@@ -79,6 +79,12 @@ Les couleurs indiques ou en est le traitement du rapprochement :
     .. image:: ../_static/fonctionnalitees/rapprochement/traite_rapprochement.png
 
 Lorsque l'événement est vert, si vous rechargez la page de gestion des rapprochements, la personne que vous avez rapprocher devrait avoir disparu de la liste de gauche.
+
+Vous pouvez aussi vérifier le avant/après en ouvrant la fiche de la personne créée manuellement puis en allant dans l'onglet ``Paramètres`` pour y voir sa liste d'événements.
+
+    .. image:: ../_static/fonctionnalitees/rapprochement/fiche_personnel_ev.png    
+
+La personne créée manuellement ne devrait plus avoir d'événements et la personne importées devrait les avoir récupérés.
 
 .. note::
     La personne dont le rapprochement à été traité n'est pas supprimée, elle est juste marquée comme : ``A supprimer`` pour vérifier que tous c'est bien déroulé comme prévu
