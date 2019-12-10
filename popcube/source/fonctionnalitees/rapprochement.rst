@@ -104,6 +104,8 @@ Exemple :
 
 Dans la fiche de la ressource, vous pouvez cocher la case : ``ressource générique`` qui permettra de faire disparaître la ressource dans la liste de gauche.
 
+.. image:: ../_static/fonctionnalitees/vbadge/editeur_personne_generique.png
+
 .. note::
     Cocher la ressource en ``ressource générique`` ne l'a fait pas disparaître de vos autres affichages. Cela permet de diminuer la liste des ressources à rapprocher pour une meilleur lisibilité.
 
@@ -114,6 +116,8 @@ Les intérimaires n'étant pas importé de KHEOPS pour le moment, il n'est pas p
 Les intérimaires ne sont pas affichés dans la partie des ressources créées manuellement.
 
 Si un intérimaire apparaît dans la liste, c'est que son ``type de contrat`` dans sa fiche n'est pas positionné sur ``Intérimaire``
+
+.. image:: ../_static/fonctionnalitees/vbadge/editeur_personne_interim.png
 
 .. warning::
     Dans le cas ou l'intérimaire est embauché par l'entreprise et qu'il est importé par kheops, il vous suffit de changer dans sa fiche son type de contrat intérimaire en CDD ou CDI puis de revenir sur l'affichage pour faire le rapprochement avec son import KHEOPS.

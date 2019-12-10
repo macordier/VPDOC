@@ -9,11 +9,12 @@ Préambule
 
 Vbadge est une carte distribuée aux collaborateurs permettant grâce à un **QR Code** imprimé dessus de récupérer ses habilitations / autorisations.
 
-.. image:: ../_static/fonctionnalitees/vbadge/badge.PNG
+    .. image:: ../_static/fonctionnalitees/vbadge/badge_jean.PNG
+    .. image:: ../_static/fonctionnalitees/vbadge/badge_jeanne.PNG
 
 Les habilitations / autorisations sont reliées directement à Visual Planning.
 
-.. image:: ../_static/fonctionnalitees/vbadge/fiche.PNG
+    .. image:: ../_static/fonctionnalitees/vbadge/fiche_jeanne.PNG
 
 Qui peut avoir une carte ?
 --------------------------
@@ -42,7 +43,9 @@ Vous pouvez le vérifier à plusieurs endroits dans l'affichage ou dans les édi
 .. image:: ../_static/fonctionnalitees/vbadge/editeurs_personne.PNG
 
 .. note::
-    Pour toute personne créée manuellement et qui est en doublon parce qu'elle a été importée de KHEOPS, vous devez effectuer un :ref:`Rapprochement`
+    Pour toute personne créée manuellement et qui est en doublon parce qu'elle a été importée de KHEOPS, vous devez effectuer un ``Rapprochement``.
+
+    Vous pouvez aller voir la documentation sur ce sujet.
 
 Demander une carte pour un collaborateur
 ----------------------------------------
@@ -54,71 +57,60 @@ Pour demander une carte vbadge, il faut commencer par vérifier les points suiva
 
 Ces informations doivent être corrigées avant la demande car elles sont inscrite sur la carte qui sera donnée aux collaborateurs.
 
-Après avoir vérifier les données, vous pouvez faire le demande à .... par mail qui vous envera la carte.
+Après avoir vérifier les données, vous pouvez faire le demande au service informatique par mail qui vous envera la carte.
 
-.. _Rapprochement:
+Explication de la fiche vbadge
+-------------------------------
 
-Rapprochement
--------------
+La fiche d'une personne reprend les informations principales situées en en-tête de la page ainsi que des tableaux récapitulatifs de ses habilitations / autorisations.
 
-.. warning::
-    Seul les ``référent`` peuvent effectuer un ``rapprochement``, rapprochez vous de vôtre référent ou contactez le service informatique.
+Les couleurs
++++++++++++++
 
-Dans certains cas, vous avez besoin de planifier la personne avant qu'elle ne soit créée dans KHEOPS.
+La couleur verte indique la ``Validité`` d'une habilitation / autorisation
 
-Pour la plannifier, vous allez la créer manuellement dans Visual Planning mais cela vous bloquera pour faire une demande de carte vbadge.
+La couleur rouge indique ``l'Invalidité`` d'une habilitation / autorisation
 
-Lorsque celle-ci sera importé depuis KHEOPS, vous pourrez les ``Rapprocher`` pour fusionner les deux personnes.
-
-.. note::
-    Lors d'un ``Rapprochement`` Tous les événements de la personne créée manuellement sont reporter sur la personne importée de KHEOPS.
-
-Pour se faire, rendez-vous dans l'onglet ``affichage`` et selectionnez l'affichage : ``_Gestion des imports Kheops``
-
-L'affichage
-^^^^^^^^^^^
-
-Il est découpé en 3 vues :
-    - Personnes créées manuellement
-    - Positionnement du rapprochement
-    - Personnes importées par KHEOPS
-
-.. image:: ../_static/fonctionnalitees/vbadge/affichage_import_kheops.png
-
-Il faut essayer de **vider** la vue ``Personnes créées manuellement`` en effectuant ces actions :
-    - Faire un rapprochement entre la personne créée manuellement et la personne importés de KHEOPS
-    - Marquer la ressource comme générique
-    - Spécifier que la personne est un intérimaire
-
-Placer un rapprochement
-^^^^^^^^^^^^^^^^^^^^^^^
-
-Prennez la personne créée manuellement dans la vue à gauche et placer la sur le planning. *Peut importe la date*
-
-Une page s'ouvre dans laquelle vous devez renseigner l'ID VINCI de la même personne importée de KHEOPS.
+    .. image:: ../_static/fonctionnalitees/vbadge/fiche_jeanne_couleur.png
 
 .. note::
-    Vous retrouvez l'ID VINCI de la personne dans la vue de droite
+    Sur cet exemple Jeanne à sa visite médicale à jour (Vert : Valide) mais son habilitation B0 est expirée (Rouge : Invalide)
 
-Quelques minutes plus tard l'événement aura disparu ainsi que la personne créée manuellement.
+L'en-tête
+++++++++++
 
-Ressource générique
-^^^^^^^^^^^^^^^^^^^
+L'en-tête reprend des informations **importantes** pour l'accueil d'un collaborateur sur site.
 
-Lorsque vous ouvrez les informations de la personne : **Double cliquez sur la personne**
+Il est possible d'y retrouver :
+    - Un scan de la carte pro btp en cliquant sur le logo
+    - Si le N1 et la formation SECUFER sont à jour
+    - Si la visite médicale est à jour
+    - Si les critères requis pour accueillir le collaborateur sur site sont respecté le logo ``Autorisé`` apparaît sinon il devient ``Non Autorisé``
 
-Vous trouverez dans la fiche de la personne une case à cocher pour la marquer en ``générique``.
-
-.. image:: ../_static/fonctionnalitees/vbadge/editeur_personne_generique.png
+    .. image:: ../_static/fonctionnalitees/vbadge/fiche_jean_explicative.png
 
 .. note::
-    Une ressource générique est une ressource non nominative comme : Intérimaire, Poseur de voies, ...
+    Sur cet exemple jean n'est pas autorisé à rentrer sur chantier car les crièteres requis ne sont pas valides. (Les logos sont rouges)
 
-Intérimaire
-^^^^^^^^^^^^
+Le corp de la fiche
+++++++++++++++++++++
 
-Lorsque vous ouvrez les informations de la personne : **Double cliquez sur la personne**
+Le corp de la fiche reprend les listes des habilitations / autorisations.
 
-Vous trouverez dans la fiche de la personne une liste déroulante de type de contrat : Sélectionnez le type ``Intérimaire``
+Lorsqu'un symbole ``+`` est présent au bout de la ligne d'une habilitation cela signifie que des documents ou spécifications lui sont attachés.
+    - Vous pouvez ouvrir la sous-section contenant les informations suplémentaire en cliquant sur la ligne.
+    - Il vous suffit de cliquer sur l'URL du document pour télécharger et ouvrir un document.
 
-.. image:: ../_static/fonctionnalitees/vbadge/editeur_personne_interim.png
+Quand tout est fermé :
+
+    .. image:: ../_static/fonctionnalitees/vbadge/fiche_jeanne_ss_closed.png
+
+Puis une fois ouvert :
+
+    .. image:: ../_static/fonctionnalitees/vbadge/fiche_jeanne_ss_open.png
+
+
+En résumé
+----------
+
+    .. image:: ../_static/fonctionnalitees/vbadge/fiche_jeanne_explicative.png
