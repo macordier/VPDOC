@@ -9,13 +9,13 @@ Préambule
 
 Vbadge est une carte distribuée aux collaborateurs permettant grâce à un **QR Code** imprimé dessus de récupérer ses habilitations / autorisations.
 
-    .. image:: ../_static/fonctionnalitees/vbadge/badge_jean.PNG
-    
-    .. image:: ../_static/fonctionnalitees/vbadge/badge_jeanne.PNG
+    .. image:: ../_static/fonctionnalitees/vbadge/badge_jean.png
+
+    .. image:: ../_static/fonctionnalitees/vbadge/badge_jeanne.png
 
 Les habilitations / autorisations sont reliées directement à Visual Planning.
 
-    .. image:: ../_static/fonctionnalitees/vbadge/fiche_jeanne.PNG
+    .. image:: ../_static/fonctionnalitees/vbadge/fiche_jeanne.png
 
 Qui peut avoir une carte ?
 --------------------------
@@ -41,7 +41,7 @@ Exemple : ``U + SSSS + . + COMPTEUR`` = ``U4302.2293``
 
 Vous pouvez le vérifier à plusieurs endroits dans l'affichage ou dans les éditeurs de saisies : ``AFFECTATION PERSONNEL`` + ``PERSONNEL``
 
-.. image:: ../_static/fonctionnalitees/vbadge/editeurs_personne.PNG
+.. image:: ../_static/fonctionnalitees/vbadge/editeurs_personne.png
 
 .. note::
     Pour toute personne créée manuellement et qui est en doublon parce qu'elle a été importée de KHEOPS, vous devez effectuer un ``Rapprochement``.
