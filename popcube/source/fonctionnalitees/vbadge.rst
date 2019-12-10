@@ -10,6 +10,7 @@ Préambule
 Vbadge est une carte distribuée aux collaborateurs permettant grâce à un **QR Code** imprimé dessus de récupérer ses habilitations / autorisations.
 
     .. image:: ../_static/fonctionnalitees/vbadge/badge_jean.PNG
+    
     .. image:: ../_static/fonctionnalitees/vbadge/badge_jeanne.PNG
 
 Les habilitations / autorisations sont reliées directement à Visual Planning.
