@@ -23,6 +23,23 @@ Ou en recherchant VPDesk dans la barre de recherche en bas à droite :
 
     Téléchargez la version windows et exécutez le fichier.
 
+Ajouter le planning ETF
+-----------------------
+
+Lors du premier lancement de VPDesk celui-ci vous demandera de renseigner un URL.
+
+Renseignez cette url : http://vp.etf.fr:4443/vplanning
+
+.. image:: ../_static/guide/url_vpdesk.png
+
+Vous pouvez ajouter un raccourcie sur le bureau pour vous connecter directement au planning ETF sans passer par VPDesk :
+    - Cliquez droit sur vp.etf.fr
+    - Ajouter un raccourcie
+
+.. image:: ../_static/guide/create_shortcut_vpdesk.png
+
+Maintenant, lorsque vous double cliquerez sur le raccourcie vp.etf.fr celui vous demandera directement vos identifiants.
+
 Compte
 ------
 
