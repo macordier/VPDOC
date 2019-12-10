@@ -20,7 +20,7 @@ Les habilitations / autorisations sont reliées directement à Visual Planning.
 Qui peut avoir une carte ?
 --------------------------
 
-Seul les personnes importés par KHEOPS peuvent avoir une carte.
+Seul les personnes importées à partir de KHEOPS peuvent avoir une carte.
 
 C'est à dire :
     - CDI
@@ -28,7 +28,7 @@ C'est à dire :
     - CDIC
 
 .. warning::
-    Les ``Intérimaires`` et ``Stagiaires`` sont les seuls ressources qui ne peuvent pas obtenir de carte.
+    Les ``Intérimaires`` et ``Stagiaires`` sont les seules ressources qui ne peuvent pas obtenir de carte.
 
     Vous ne pouvez pas demander une carte pour une personne créée manuellement dans Visual Planning.
 
@@ -56,9 +56,9 @@ Pour demander une carte vbadge, il faut commencer par vérifier les points suiva
     - Nom - Prénom
     - Qualification de bulletin
 
-Ces informations doivent être corrigées avant la demande car elles sont inscrite sur la carte qui sera donnée aux collaborateurs.
+Ces informations doivent être corrigées avant la demande car elles sont inscrites sur la carte qui sera donnée aux collaborateurs.
 
-Après avoir vérifier les données, vous pouvez faire le demande au service informatique par mail qui vous envera la carte.
+Après avoir vérifier les données, vous pouvez faire la demande au service informatique par mail qui vous envera la carte.
 
 Explication de la fiche vbadge
 -------------------------------
@@ -75,7 +75,7 @@ La couleur rouge indique ``l'Invalidité`` d'une habilitation / autorisation
     .. image:: ../_static/fonctionnalitees/vbadge/fiche_jeanne_couleur.png
 
 .. note::
-    Sur cet exemple Jeanne à sa visite médicale à jour (Vert : Valide) mais son habilitation B0 est expirée (Rouge : Invalide)
+    Sur cet exemple Jeanne a sa visite médicale à jour (Vert : Valide) mais son habilitation B0 est expirée (Rouge : Invalide)
 
 L'en-tête
 ++++++++++
@@ -83,7 +83,7 @@ L'en-tête
 L'en-tête reprend des informations **importantes** pour l'accueil d'un collaborateur sur site.
 
 Il est possible d'y retrouver :
-    - Un scan de la carte pro btp en cliquant sur le logo
+    - Un scan de la carte pro BTP en cliquant sur le logo
     - Si le N1 et la formation SECUFER sont à jour
     - Si la visite médicale est à jour
     - Si les critères requis pour accueillir le collaborateur sur site sont respecté le logo ``Autorisé`` apparaît sinon il devient ``Non Autorisé``
@@ -91,7 +91,7 @@ Il est possible d'y retrouver :
     .. image:: ../_static/fonctionnalitees/vbadge/fiche_jean_explicative.png
 
 .. note::
-    Sur cet exemple jean n'est pas autorisé à rentrer sur chantier car les crièteres requis ne sont pas valides. (Les logos sont rouges)
+    Sur cet exemple Jean n'est pas autorisé à rentrer sur chantier car les crièteres requis ne sont pas valides. (Les logos sont rouges)
 
 Le corp de la fiche
 ++++++++++++++++++++
