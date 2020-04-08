@@ -25,6 +25,12 @@ Adresse mail du projet : support.vp@etf.fr
 
 .. toctree::
   :maxdepth: 3
+  :caption: Nouveautés version 7
+
+  nouveautes_V7/nouveautes_v7
+
+.. toctree::
+  :maxdepth: 3
   :caption: Guide d'utilisation
 
   guide_visual_planning/guide_utilisation
