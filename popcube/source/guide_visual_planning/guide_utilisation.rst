@@ -2,7 +2,7 @@
 .. _goconvey : https://github.com/smartystreets/goconvey
 
 Comment se connecter ?
-===========================
+======================
 
 Installer VPDesk
 -----------------
@@ -13,41 +13,47 @@ Vous pouvez lancer VPDesk avec l'icône sur votre bureau :
 
 .. image:: ../_static/guide/vpdesk_ico.png
 
-Ou en recherchant VPDesk dans la barre de recherche en bas à droite :
+Ou en recherchant VPDesk dans la barre de recherche Windows (par défaut, en bas à gauche) :
 
 .. image:: ../_static/guide/search_vpdesk.png
 
 
 .. warning::
-    Si VPDesk n'est ni sur votre bureau ni dans la barre de recherche, téléchargez le ici : https://www.visual-planning.com/fr/accueil-espace-client/espace-clients-vpdesk
+    * Si l'application VPDesk n'est ni sur votre bureau, ni dans la barre de recherche, vous pouvez la retrouver dans le Centre Logiciel d'Eurovia (taper "software center" dans la barre de recherche Windows) :
 
-    Téléchargez la version windows et exécutez le fichier.
+    .. image:: ../_static/guide/vpdesk_software_center_1.png    
+    
+    .. image:: ../_static/guide/vpdesk_software_center_2.png
+
+    * Vous pouvez également télécharger la dernière version de VPDesk (https://www.visual-planning.com/fr/accueil-espace-client/espace-clients-vpdesk) et l'installer, si les droits sur votre poste vous le permettent.
 
 Ajouter le planning ETF
 -----------------------
 
-Lors du premier lancement de VPDesk celui-ci vous demandera de renseigner un URL.
-
-Renseignez cette url : http://vp.etf.fr:4443/vplanning
+Lors du premier lancement de VPDesk, on vous demandera de renseigner une URL de paramétrage :
+    - en version 6 : http://vp.etf.fr:4443/vplanning
+    - en version 7 : http://fref92-001sv113/vplanning
 
 .. image:: ../_static/guide/url_vpdesk.png
 
-Vous pouvez ajouter un raccourcie sur le bureau pour vous connecter directement au planning ETF sans passer par VPDesk :
-    - Cliquez droit sur vp.etf.fr
-    - Ajouter un raccourcie
+.. warning::
+    Attention à recopier strictement cette URL (sans espace avant, ni après) ; sinon, un message d'erreur apparaîtra.
+
+Vous pouvez ajouter un raccourci sur le bureau pour vous connecter directement au planning ETF (sans passer par VPDesk) :
+    - Cliquer droit sur la ligne "Visual Planning ETF"
+    - Sélectionner "Créer un raccourci sur le bureau"
 
 .. image:: ../_static/guide/create_shortcut_vpdesk.png
 
-Maintenant, lorsque vous double cliquerez sur le raccourcie vp.etf.fr celui vous demandera directement vos identifiants.
+.. note::
+    Si vous ressentez des difficultés pour vous connecter via ce raccourci (lenteur importante ou arrêt complet de chargement), il faudra supprimer le raccourci puis le recréer.
 
 Compte
 ------
 
-Votre identifiant est composé de la façon suivante : ::
+Votre identifiant est identique à celui utilisé pour accéder à la session Windows.
 
-    Première lettre du prénom + Nom
-
-Lors de votre première connexion laissez votre mot de passe vide, Visual Planning vous demandera d'en définir un pour votre compte.
+Lors de votre première connexion, laissez vide le champ de mot de passe puis valider. On vous demandera d'en définir un nouveau à l'étape d'après.
 
 Le mot de passe doit être composé de : ::
 
@@ -56,10 +62,10 @@ Le mot de passe doit être composé de : ::
     - Au moins 4 caractères
 
 .. note::
-    Ce mot de passe n'a pas besoin d'être modifié.
+    Ce mot de passe n'aura pas besoin d'être renouvelé périodiquement.
 
 .. warning::
-    Si vous n'avez pas encore de compte visual planning ou que vous ne vous souvenez plus de votre mot de passe contactez :
+    Si vous n'avez pas encore de compte Visual Planning ou que vous avez oublié votre mot de passe, contactez l'une des personnes suivantes :
         - Maxime CORDIER : maxime.cordier@etf.fr
         - Julien GUY : julien.guy@etf.fr
 
@@ -67,36 +73,37 @@ Le mot de passe doit être composé de : ::
 Choisir son planning
 ====================
 
-Lors de votre première connexion visual planning vous demandera de sélectionner un planning. Sélectionnez le planning selon vos besoins :
+Lors de votre première connexion à Visual Planning, il vous sera demandé de sélectionner un planning :
 
-    - ETF_OFFICIEL_V3 :
-        - Planification de ressources (Personnel, Matériel)
+    - ETF_OFFICIEL_V3 (planning de production):
+        - Gestion du plan de charges
+        - Planification des ressources (Personnel, Matériel)
         - Gestion des habilitations
-        - Gestion des formations
-    - ETF_RAPPORT_V3 :
-        - Rapport soudure et meulage
-        - Plan de veille et gestion des KNs
+        - Planification des formations
+    - ETF_RAPPORT_V3 (planning de dématérialisation des rapports):
+        - Rapports soudure/meulage
+        - Plan de veille et gestion des contrôles KN
         - Autorisation d'accès aux emprises ferroviaires (SECUFER)
 
 .. warning::
-    Les autres planning visibles sont des plannings de test et de développement. Aucune données ne pourra être récupérée de ces plannings
+    Les autres plannings visibles sont des plannings de test et de développement. Aucune donnée ne pourra être récupérée depuis ces plannings.
+
 
 Que faire une fois connecté ?
 ===============================
 
-Une fois la barre de chargement disparu, vous devez demander à Visual Planning de vous afficher des données.
+Une fois la barre de chargement disparue, vous devez alors demander à Visual Planning de vous afficher des données.
 
-Cliquez sur l'onglet ``Affichage`` en haut puis selectionnez un affichage dans la liste des affichages :
+Cliquez sur l'onglet ``Affichage`` dans le ruban (en haut) puis selectionnez un affichage dans la liste des "affichages favoris" :
 
-.. image:: ../_static/guide/affichages.png
+.. image:: ../_static/guide/v7_onglet_affichage.png
 
 .. note::
-    Lorsque vous femerez Visual Planning (avec la croix rouge en haut à droite), celui-ci se souviendra du dernier planning et affichage ouvert.
+    Lorsque vous femerez manuellement Visual Planning, le dernier affichage ouvert sera conservé en mémoire pour la prochaine connexion.
 
 .. warning::
-    Si vous restez trop longtemps inactif sur Visual Planning (environt 30min d'inactivité) celui-ci vous deconnectera et ne se souviendra pas de votre dernier planning ou affichage.
+    Si vous restez trop longtemps inactif dans Visual Planning ou que vous subissez une perte de connexion, vous serez déconnecté automatiquement et le dernier affichage visité ne sera pas gardé en mémoire.
 
-Pour le reste des fonctionnalités, référez vous au différentes documentations disponibles.
 
 Vocabulaire Visual Planning
 ============================
@@ -104,125 +111,163 @@ Vocabulaire Visual Planning
 Dimension
 ---------
 
-Une ``dimension`` est une table de données. Il existe une ``dimension`` pour chaque "type" de données : ::
+Une ``dimension`` est une table de données. Il existe une dimension pour chaque "type" de données que nous souhaitons planifier. Voici une liste non exhaustive :
 
-    Dimension "PERSONNELS" : Regroupe les collaborateurs
-    Dimension "ABSENCES" : Regroupe les absences
-    Dimension "CHANTIERS" : Regroupe les chantiers
+    - "PERSONNELS" : Regroupe l'ensemble des collaborateurs du groupe (sans notion d'appartenance à un périmètre spécifique).
+    - "AFFECTATION_P" : Regroupe l'ensemble des affectations du personnel (une personne peut donc avoir plusieurs affectations suivant ses mutations ou mises à disposition entre secteurs).
+    - "ABSENCES" : Regroupe les différents types d'absence programmables.
+    - "CHANTIERS" : Regroupe l'ensemble des chantiers (ouverts depuis KHEOPS ou créés manuellement dans VP).
 
-On peut comparer la dimension a un tableau Excel.
+On peut comparer une dimension à un tableau Excel.
 
 Rubrique
 --------
 
-Cette ``dimension`` est constituée de ``rubriques``.
+Une ``dimension`` est constituée de ``rubriques``, c'est-à-dire d'attributs, permettant de qualifier la ressource.
 
-Ces rubriques peuvent-être de différentes forment comme :
+Ces rubriques peuvent être de différentes formes, comme :
     - Du texte à remplir
     - Des fichiers à attacher
     - Des cases à cocher
 
-Exemple avec la dimension PERSONNEL : ::
+Exemple avec la dimension ``PERSONNELS`` : ::
 
     Rubrique "Nom - Prénom" contient le nom et le prénom de la personne
-    Rubrique "Parti" permet de coché si la ressource est partie
-    Rubrique "Photo" contient une image 
+    Rubrique "Parti" permet de préciser si la ressource est active ou non
+    Rubrique "Photo" contient une image de la personne
 
-Une ``rubrique`` peut-être comparée à une colonne d'un tableau Excel
+Une rubrique peut être comparée à une colonne d'un tableau Excel.
 
 Ressource
 ---------
 
-Une ``ressource`` est un item de la dimension.
+Une ``ressource`` est un item d'une dimension.
 
-Maxime CORDIER est une ressource et ces informations sont : ::
+Maxime CORDIER est une ressource et ses informations sont : ::
 
     "Nom - Prénom" : Maxime CORDIER
     "Parti" : Non coché
     "Photo" : Une photo de Maxime CORDIER
 
-Une ``ressource`` peut être comparée à une ligne rempli d'un tableau Excel
+Une ressource peut être comparée à une ligne d'un tableau Excel.
 
 Vue
 ----
 
-Une ``vue`` est une façon d'afficher et de mettre en forme les données visuellement.
+Une ``vue`` est une fenêtre. Elle permet d'afficher les données "ressources" et/ou "événements" mises en forme.
 
-Il existe différents types de ``vues`` selon leurs utilités :
+Il existe différents types de ``vue`` :
 
-    - Vue ressource : C'est une liste de ``ressource`` de la ``dimension`` choisie. 
+    - **Vue Ressource :**
+    C'est une liste de ``ressources`` (personnel, engins, véhicules, chantiers,...). Elle pourra être affichée en tableau ou en liste.
 
-        .. image :: ../_static/guide/vue_ressource_personnel.png
+        .. image :: ../_static/guide/v7_vue_ressource_personnel.png
 
-    - Vue planning : C'est le planning lié à la dimensions choisie.
-        - A gauche une liste de ressources
-        - A droite un planning
+    - **Vue Planning :**
+    C'est le planning associé aux ``ressources`` d'une ``dimension`` donnée. Une vue planning sera toujours disposée de la manière suivante.
+        - A gauche : une liste des ressources
+        - A droite : un planning avec les événements liés à ces ressources
 
-        .. image :: ../_static/guide/vue_planning_explication.png
-
-.. note::
-    Vous retrouvez le nom de la ``dimension`` à laquelle la ``vue`` est liée en regardant en haut à gauche de la ``vue``.
+        .. image :: ../_static/guide/v7_vue_planning_explication.png
 
 Affichage
 ---------
 
-Un ``affichage`` est un ensemble de ``vue`` dont la mise en forme a été sauvegardée.
-
-Elle peut-être ``public`` (Tous le monde peut y avoir accès) ou ``privée`` uniquement vous pouvez y avoir accès.
+Un ``affichage`` est un ensemble de ``vues`` dont la mise en forme a été sauvegardée. Il peut être ``public`` (tout le monde peut y avoir accès) ou ``privé`` (uniquement disponible depuis le compte qui l'a créé).
 
 .. note::
     Tous les affichages commençant par "_" (Exemple : _Planification) sont des affichages publics à tout ETF.
 
-    Tous les affichages commançant par un Code Secteur "MUXXXX" ou un Code Agence "ACXXXX" (Exemple : MU3939 - Planification) sont des affichages public uniquement de le secteur ou l'agence concerné.
+    Tous les affichages commençant par un Code Secteur "MUXXXX" ou un Code Agence "ACXXXX" (Exemple : MU3939 - Planification) sont des affichages publics, visibles uniquement par les utilisateurs disposant des droits correspondant.
 
 **Le nom d'un affichage correspond, dans la plupart des cas, aux actions qu'il est possible de réaliser dessus.**
 
 Evénement
 ---------
 
-Un événement est une liaison entre deux ressources de dimensions différentes à des dates.
+Un événement est la liaison entre au moins deux ressources différentes à une date donnée.
 
-Une absence est un événement contenant : ::
+Par exemple, une absence est un événement contenant :
+    - Une ressource **ABSENCE** : ``Congé Payé``
+    - Une ressource **PERSONNEL** : ``Maxime CORDIER``
+    - Une **date de début** d'événement : ``01/01/2020``
+    - Une **date de fin** d'événement : ``08/01/2020``
 
-    Une ressource "ABSENCE" : "Congé"
-    Une ressource "PERSONNEL" : "Maxime CORDIER"
-    "Date de début d'événement" : "01/01/2010"
-    "Date de fin d'événement" : "08/01/2010"
+Un événement apparaît, sur une vue planning, comme une barre délimitée par la date de début et la date de fin.
 
-Un événement apparaît sur une vue planning comme une barre qui commence à la date de début et qui finit à la date de fin.
+Filtres
+=======
 
-Filtre
-------
-
-La force de Visual Planning réside dans sa possibilité à filtrer toutes les vues.
-
-.. note::
-    Par défaut la plupart des vues sont filtrée sur les ressources de vos droits secteurs.
-
-Sur des vue qui ne contiennent que des ressources, il y a deux niveaux de filtre :
-    - Niveau 1 (Libellé : nom de la dimension): Liste de filtres défini
-    - Niveau 2 (Filtre rapide): Filtre sur les différentes rubrique qui composent la dimension.
-
-Pour changer les filtre, cliquez sur les listes déroulantes à côté.
-
-.. warning::
-    Le filtre de ``niveau 1`` est toujours plus restricif que les filtres rapide.
-
-    Si le filtre de ``niveau 1`` est : ``_Personnel de mon secteur`` (qui n'affiche que le personnel selon mes droits secteurs) et que je cherche à aller voir un autre secteur,
-    il faut le définir en ``filtre rapide`` et changer le filtre de ``niveau 1`` par un filtre mon restricitif.
-
-Sur des vues qui contiennent des événements, il y a deux niveaux de filtre pour les ressources et deux niveaux de filtre pour les événement :
-    - Filtre des ressources : (Comme sur une vue ressource)
-        - Niveau 1 : Liste de filtres défini
-        - Niveau 2 : Filtre sur les différentes rubrique qui composent la dimension.
-    - Filtre d'événemement :
-        - Niveau 1 (Libellé : événement): Liste de filtre défini
-        - Niveau 2 (Filtre rapide): Filtre sur les différentes dimensions
+La force de Visual Planning réside dans sa capacité à filtrer les informations affichées (ressources ou événements).
 
 .. note::
-    Le filtre de moin restrictif de Visual Planning est le filtre ``(Tous)``
+    Par défaut, la plupart des vues sont paramétrées sur les ressources de votre périmètre (autrement dit, par rapport aux droits qui vous ont été attribués).
 
-Raccourcies clavier
+Filtres de Ressources
+---------------------
+
+Sur les vues de type "liste de ressources", il y a deux niveaux de filtre :
+    - Niveau 1 (= Filtre de la ressource) : il est composé d'une liste de filtres généraux prédéfinis. Par exemple, pour les chantiers, le filtre ``_Chantiers de mon secteur`` permet d'afficher uniquement les chantiers ouverts sur mon secteur.
+        
+    .. image:: ../_static/guide/filtre_ressources_niveau_1.png
+    
+    - Niveau 2 (= Filtres rapides de la ressource) : ils permettent de filtrer sur les attributs des ressources. Par exemple, pour les chantiers, le filtre rapide ``Clôturé`` permet d'afficher les chantiers actifs (si Clôturé = Non) ou inactifs (si Clôturé = Oui).
+
+    .. image:: ../_static/guide/filtre_ressources_niveau_2.png
+
+
+.. warning ::
+    Le filtre "général" de la ressource (niveau 1) est toujours plus restrictif que les filtres rapides (niveau 2). 
+    Les filtres de niveau 2 permettent de resteindre les informations obtenues avec le filtre de niveau 1.
+
+    Pour aller plus loin, dans la liste du personnel :
+        - Si je choisis un filtre de ressources (niveau 1) ``_Personnel de mon secteur`` (qui n'affiche que les collaborateurs appartenant au(x) secteur(s) définis par mes droits VP),
+        - Et que je souhaite, par la suite, obtenir l'ensemble du personnel d'un secteur voisin (secteur non compris dans mes droits VP),
+        - Si je sélectionne alors, dans le filtre rapide ``Secteur`` (niveau 2), le secteur voisin correspondant,
+        - Au final, j'obtiens une liste vide. Pourquoi ? 
+        - Voici ce que j'ai littéralement demandé à Visual Planning : "Liste-moi, parmi le personnel de mon secteur (niveau 1), le personnel du secteur voisin (niveau 2)".
+        - Effectivement, si le personnel appartient au secteur voisin, il ne peut pas être dans mon secteur (et inversement).
+    **Solution** : il faut annuler le filtre de niveau 1 par un filtre moins restrictif (par exemple, basculer le filtre ``_Personnel de mon secteur`` vers ``(Tous)``).
+    Littéralement, voici ce que je demande : "Liste-moi, parmi **TOUT** le personnel du groupe (niveau 1), le personnel du secteur voisin (niveau 2)". Dans ce cas-là, j'obtiens le bon résultat.
+
+Filtres d'Evénements
+--------------------
+
+Sur toutes les vues contenant des événements (vue planning, rapport d'événements, ...), il y a deux niveaux de filtre pour les ressources (voir paragraphe plus haut) ainsi que deux niveaux de filtre pour les événements :
+    - Filtres des ressources : (comme sur une vue ressource)
+        - Niveau 1 : Filtres prédéfinis de la ressource considérée. 
+        .. note::
+            Dans une vue planning, une nouvelle fonctionnalité s'ajoute au niveau 1. Vous avez la possibilité de filtrer les ressources (affichées dans la partie gauche) en fonction de leur planification sur une période donnée.
+            Pour ce faire, activer le bouton ``Afficher les (NOM DE LA RESSOURCE) ayant au moins un événement visible`` puis définissez la période sur laquelle vous souhaitez appliquer le filtre.
+            
+            Exemple : Je suis dans une vue planning personnel filtrée automatiquement sur le personnel de mon secteur.
+
+            .. image:: ../_static/guide/filtre_ressources_EVE_1.png
+
+            Si je souhaite afficher uniquement le personnel programmé en semaine 10, j'active la fonctionnalité et je définis la période considérée (= S10).
+
+            .. image:: ../_static/guide/filtre_ressources_EVE_2.png
+
+            **Résultat** : seul le personnel ayant un événement dans le planning la semaine 10 s'affiche dans la colonne des ressources (à gauche). Autrement dit, le personnel sans planification la semaine 10 ne sera pas visible dans la colonne de gauche.
+
+            .. image:: ../_static/guide/filtre_ressources_EVE_3.png
+
+        - Niveau 2 : Filtres rapides (filtres sur les différents attributs de la ressource). Pas de nouveauté ici.
+
+    - Filtres des événemements :
+        Si la partie ``Filtres des événements`` n'est pas automatiquement développée (à cause d'une taille d'écran trop faible notamment), vous devez appuyer sur le bouton suivant :
+
+        .. image :: ../_static/guide/filtre_evenements_bouton.png
+
+        - Niveau 1 (= Filtres d'événements) : il est composé de filtres généraux prédéfinis. Ils permettent de filtrer les événements affichés dans le planning. Voici quelques exemples :
+            - ``_Evénements de planification`` : montre tous les événements (hors "Besoins sur chantier" et "Planification de projet").
+            - ``_Evénements de BESOINS de mon secteur`` : montre uniquement les événements "Besoins sur chantier".
+        - Niveau 2 (= Filtres rapides) : on peut alors filtrer plus précisément sur les différentes dimensions.
+
+.. note::
+    Le filtre le moins restrictif dans Visual Planning est le filtre ``(Tous)``.
+
+Raccourcis clavier
 ===================
 
 ===========================     ============================================================================================
@@ -230,24 +275,24 @@ Touche                          Action
 ===========================     ============================================================================================
 CTRL + C                        Copier
 ---------------------------     --------------------------------------------------------------------------------------------
-CTRL + V                        Coller
----------------------------     --------------------------------------------------------------------------------------------
 CTRL + X                        Couper
 ---------------------------     --------------------------------------------------------------------------------------------
-CTRL + Z                        Retour arrière
+CTRL + V                        Coller
 ---------------------------     --------------------------------------------------------------------------------------------
-CTRL + Y                        Retour avant
+CTRL + Z                        Retour arrière (annuler dernière action)
+---------------------------     --------------------------------------------------------------------------------------------
+CTRL + Y                        Retour avant (répéter dernière action)
 ---------------------------     --------------------------------------------------------------------------------------------
 CTRL + A                        Selectionner tout
 ---------------------------     --------------------------------------------------------------------------------------------
-CTRL + CLIQUE GAUCHE            Sélection multiple individuel
+CTRL + CLIQUE GAUCHE            Sélection multiple individuelle
 ---------------------------     --------------------------------------------------------------------------------------------
 MAJUSCULE + CLIQUE GAUCHE       Sélection multiple du premier élément selectionné au dernier
 ---------------------------     --------------------------------------------------------------------------------------------
 GLISSER/DEPOSER                 Créer un événement avec la ressource tenue en souris
 ---------------------------     --------------------------------------------------------------------------------------------
-GLISSER/DEPOSER + CTRL          Ajouter/modifier a un événement déjà existant le ressource tenue en souris
+GLISSER/DEPOSER + CTRL          Modifier un événement existant avec la ressource tenue en souris
 ===========================     ============================================================================================
 
 .. note::
-    Lors d'une sélection multiple, il faut faire : **cliquer avec boutton droit** pour ouvrir le menu puis **cliquer sur modifier** pour tout modifier en même temps.
+    Lors de la modification multiple de plusieurs événements, faire un **clique-droit** sur un des éléments sélectionnés (pour ouvrir le menu contextuel) puis cliquer sur **Modifier** pour changer un ou plusieurs paramètres sur l'ensemble des événements.
