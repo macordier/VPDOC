@@ -113,21 +113,21 @@ Modification liées aux ressources
 
 **PERSONNELS :**
     - La rubrique ``Parti`` est devenue ``Sortie KHEOPS`` et n’est plus modifiable. Elle se mettra automatiquement à jour avec les imports KHEOPS.
-    - Une rubrique (case à cocher) ``Afficher`` a été ajoutée : si cochée, la ressource sera visible dans vos plannings ou vos listes.
+    - Une rubrique (case à cocher) ``Cacher`` a été ajoutée : si cochée, la ressource ne sera pas visible dans vos plannings ou vos listes.
     - Le responsable direct de la personne est maintenant importé depuis KHEOPS. Il n’est pas modifiable.
     - La ville de résidence de la personne est maintenant importée depuis KHEOPS.
 
 **ENGINS / VEHICULES :**
     - La rubrique ``Démobilisé`` est devenue ``Sortie KHEOPS`` et n’est plus modifiable. Elle se mettra automatiquement à jour avec les imports KHEOPS.
-    - Une rubrique (case à cocher) ``Afficher`` a été ajoutée : si cochée, la ressource sera visible dans vos plannings ou vos listes.
+    - Une rubrique (case à cocher) ``Cacher`` a été ajoutée : si cochée, la ressource ne sera pas visible dans vos plannings ou vos listes.
 
 **CHANTIERS :**
     - La rubrique ``Clôturé`` est devenue ``Sortie KHEOPS`` et n’est plus modifiable. Elle se mettra automatiquement à jour avec les imports KHEOPS.
-    - Une rubrique (case à cocher) ``Afficher`` a été ajoutée : si cochée, la ressource sera visible dans vos plannings ou vos listes.
+    - Une rubrique (case à cocher) ``Cacher`` a été ajoutée : si cochée, la ressource ne sera pas visible dans vos plannings ou vos listes.
     - La liste déroulante de sélection d’un pays est devenue une liste de ressource **PAYS**. Le pays est maintenant importé automatiquement de KHEOPS.
 
 **AFFECTATION_P :**
-    - La rubrique ``Parti`` est devenue ``Afficher`` : si cochée, la ressource sera visible dans vos plannings ou vos listes.
+    - La rubrique ``Parti`` est devenue ``Cacher`` : si cochée, la ressource ne sera pas visible dans vos plannings ou vos listes.
 
-**AFFECTATION_E & AFFECTATION_V :**
-    - La rubrique ``Démobilisé`` est devenue ``Afficher`` : si cochée, la ressource sera visible dans vos plannings ou vos listes.
+**AFFECTATION_E / AFFECTATION_V :**
+    - La rubrique ``Démobilisé`` est devenue ``Cacher`` : si cochée, la ressource ne sera pas visible dans vos plannings ou vos listes.
