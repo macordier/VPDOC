@@ -1,13 +1,13 @@
 .. vbadge:
 
-==========================
-Vbadge
-==========================
+======
+VBADGE
+======
 
 Préambule
 ---------
 
-Vbadge est une carte distribuée aux collaborateurs permettant grâce à un **QR Code** imprimé dessus de récupérer ses habilitations / autorisations.
+Vbadge est une carte, distribuée aux collaborateurs, permettant de récupérer l'ensemble de leurs habilitations / autorisations en temps réel et ainsi de s'affranchir d'une réédition papier à chaque mise à jour de ces dernières. L'accès se fait en scannant le QR Code présent sur le badge, à l'aide de n'importe laquelle des applications disponibles sur les "stores" Android et Apple.
 
     .. image:: ../_static/fonctionnalitees/vbadge/badge_jean.png
 
@@ -15,12 +15,12 @@ Vbadge est une carte distribuée aux collaborateurs permettant grâce à un **QR
 
 Les habilitations / autorisations sont reliées directement à Visual Planning.
 
-    .. image:: ../_static/fonctionnalitees/vbadge/fiche_jeanne.png
+    .. image:: ../_static/fonctionnalitees/vbadge/v7_fiche_jeanne.png
 
 Qui peut avoir une carte ?
 --------------------------
 
-Seul les personnes importées à partir de KHEOPS peuvent avoir une carte.
+Seul les personnes importées de KHEOPS peuvent avoir une carte.
 
 C'est à dire :
     - CDI
@@ -28,79 +28,89 @@ C'est à dire :
     - CDIC
 
 .. warning::
-    Les ``Intérimaires`` et ``Stagiaires`` sont les seules ressources qui ne peuvent pas obtenir de carte.
+    Les **Intérimaires** et **Stagiaires** sont les seuls collaborateurs qui ne peuvent pas obtenir de carte.
 
-    Vous ne pouvez pas demander une carte pour une personne créée manuellement dans Visual Planning.
+    De plus, vous ne pouvez pas demander une carte pour une personne créée manuellement dans Visual Planning.
 
-Comment reconnaitre une ressource créée manuellement ?
+Comment reconnaître une ressource créée manuellement ?
 ------------------------------------------------------
 
-Une personne créée manuellement à un ID VINCI commençant par ``U`` pour Utilisateur, ainsi que le code du secteur de la ressource et un compteur.
+Une personne créée manuellement à un ID VINCI commençant par la lettre ``U`` ("U" pour Utilisateur) suivie du code secteur de la ressource et d'un compteur.
 
 Exemple : ``U + SSSS + . + COMPTEUR`` = ``U4302.2293``
 
-Vous pouvez le vérifier à plusieurs endroits dans l'affichage ou dans les éditeurs de saisies : ``AFFECTATION PERSONNEL`` + ``PERSONNEL``
+Vous pouvez l'observer dans les affichages ou les éditeurs de saisie : ``AFFECTATION PERSONNEL`` + ``PERSONNEL``
 
-.. image:: ../_static/fonctionnalitees/vbadge/editeurs_personne.png
+.. image:: ../_static/fonctionnalitees/vbadge/v7_editeurs_personne.png
 
 .. note::
-    Pour toute personne créée manuellement et qui est en doublon parce qu'elle a été importée de KHEOPS, vous devez effectuer un ``Rapprochement``.
+    Si vous remarquez un doublon dans la liste de votre personnel, vous devez alors effectuer un **Rapprochement**.
 
-    Vous pouvez aller voir la documentation sur ce sujet.
+    Vous pouvez aller voir la documentation à ce sujet.
 
 Demander une carte pour un collaborateur
 ----------------------------------------
 
-Pour demander une carte vbadge, il faut commencer par vérifier les points suivants concernant le collaborateur :
-    - Photo
-    - Nom - Prénom
-    - Qualification de bulletin
+Pour demander une carte VBADGE, il faut tout d'abord vérifier, dans Visual Planning, les points suivants concernant le collaborateur :
+    - ``Photo`` chargée dans la fiche de la personne
+    - ``NOM Prénom`` correct (orthographe)
+    - ``Qualification de bulletin`` à jour (si volonté de l'imprimer sur le badge)
 
-Ces informations doivent être corrigées avant la demande car elles sont inscrites sur la carte qui sera donnée aux collaborateurs.
+.. note::
+    L'impression de la qualification de bulletin est optionnelle.
 
-Après avoir vérifier les données, vous pouvez faire la demande au service informatique par mail qui vous envera la carte.
+    Eviter également les photos trop lourdes (plusieurs Mo). Nous recommandons une résolution d'environ 300x300 pixels.
 
-Explication de la fiche vbadge
--------------------------------
+Après avoir vérifié les données ci-dessus, vous pouvez faire la demande au service informatique par mail (support.vp@etf.fr) en précisant les points suivants :
+    - Noms, Prénoms et Secteur (MU) d'appartenance
+    - Choix d'impression de la qualification de bulletin
+    - Contact (en charge de la réception) et adresse de livraison
 
-La fiche d'une personne reprend les informations principales situées en en-tête de la page ainsi que des tableaux récapitulatifs de ses habilitations / autorisations.
+Explication de la fiche VBADGE
+------------------------------
+
+La fiche VBADGE reprend les informations primordiales d'accès aux emprises ferroviaires (situées en en-tête) et liste les habilitations / autorisations du collaborateur.
 
 Les couleurs
-+++++++++++++
+++++++++++++
 
-La couleur verte indique la ``Validité`` d'une habilitation / autorisation
+La couleur verte indique la **Validité** d'une habilitation / autorisation.
 
-La couleur rouge indique ``l'Invalidité`` d'une habilitation / autorisation
+La couleur rouge indique l'**expiration** d'une habilitation / autorisation.
 
-    .. image:: ../_static/fonctionnalitees/vbadge/fiche_jeanne_couleur.png
+    .. image:: ../_static/fonctionnalitees/vbadge/v7_fiche_jeanne_couleur.png
 
 .. note::
-    Sur cet exemple Jeanne a sa visite médicale à jour (Vert : Valide) mais son habilitation B0 est expirée (Rouge : Invalide)
+    Dans cet exemple, la visite médicale de Jeanne est à jour (Vert = Valide) mais son habilitation électrique B0 est expirée (Rouge = Invalide).
 
 L'en-tête
-++++++++++
++++++++++
 
-L'en-tête reprend des informations **importantes** pour l'accueil d'un collaborateur sur site.
+L'en-tête reprend les informations **nécessaires** à l'accueil d'un collaborateur sur un nouveau site.
 
-Il est possible d'y retrouver :
-    - Un scan de la carte pro BTP en cliquant sur le logo
-    - Si le N1 et la formation SECUFER sont à jour
-    - Si la visite médicale est à jour
-    - Si les critères requis pour accueillir le collaborateur sur site sont respecté le logo ``Autorisé`` apparaît sinon il devient ``Non Autorisé``
+On observe :
+    - Un scan de la carte pro BTP en cliquant sur le logo de la "carte"
+    - La validité des habilitations **Prévention N1** (``N1``) et **Sécurité Ferroviaire** (``SF``)
+    - La validité de la **Visite Médicale** (``VM``)
+    - Si les critères requis pour accueillir le collaborateur sur le chantier / site sont respectés, alors le logo ``Autorisé`` apparaît ; le cas échéant, il apparaît ``Non Autorisé``.
 
-    .. image:: ../_static/fonctionnalitees/vbadge/fiche_jean_explicative.png
+Voici 2 cas de figure :
+
+    .. image:: ../_static/fonctionnalitees/vbadge/v7_fiche_jean_explicative.png
+
+    .. image:: ../_static/fonctionnalitees/vbadge/v7_fiche_jeanne_explicative.png
 
 .. note::
-    Sur cet exemple Jean n'est pas autorisé à rentrer sur chantier car les crièteres requis ne sont pas valides. (Les logos sont rouges)
+    Dans cet exemple, Jean n'est pas autorisé à pénétrer sur le chantier car les critères requis ne sont pas vérifiés (= au moins un logo sont rouge) contrairement à Jeanne.
 
-Le corp de la fiche
+Le corps de la fiche
 ++++++++++++++++++++
 
-Le corp de la fiche reprend les listes des habilitations / autorisations.
+Le corps de la fiche reprend la liste des habilitations / autorisations.
 
-Lorsqu'un symbole ``+`` est présent au bout de la ligne d'une habilitation cela signifie que des documents ou spécifications lui sont attachés.
-    - Vous pouvez ouvrir la sous-section contenant les informations suplémentaire en cliquant sur la ligne.
-    - Il vous suffit de cliquer sur l'URL du document pour télécharger et ouvrir un document.
+Lorsqu'un symbole ``+`` est présent au bout de la ligne d'une habilitation, cela signifie que des documents ou des précisions y sont attachés.
+    - Vous pouvez ouvrir la sous-section contenant les informations supplémentaires en cliquant sur la ligne.
+    - Il vous suffit alors de cliquer sur l'URL du document pour l'ouvrir.
 
 Quand tout est fermé :
 
@@ -109,9 +119,3 @@ Quand tout est fermé :
 Puis une fois ouvert :
 
     .. image:: ../_static/fonctionnalitees/vbadge/fiche_jeanne_ss_open.png
-
-
-En résumé
-----------
-
-    .. image:: ../_static/fonctionnalitees/vbadge/fiche_jeanne_explicative.png
