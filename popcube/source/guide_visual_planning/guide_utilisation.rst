@@ -31,8 +31,7 @@ Ajouter le planning ETF
 -----------------------
 
 Lors du premier lancement de VPDesk, on vous demandera de renseigner une URL de paramétrage :
-    - en version 6 : http://vp.etf.fr:4443/vplanning
-    - en version 7 : http://fref92-001sv113/vplanning
+    http://vp.etf.fr:4443/vplanning
 
 .. image:: ../_static/guide/url_vpdesk.png
 
