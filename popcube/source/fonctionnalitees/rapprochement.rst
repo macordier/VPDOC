@@ -2,122 +2,117 @@
 Rapprochement
 =============
 
-Le rapprochement permet de fusionner une personne créée manuellement avec une personne importée depuis KHEOPS.
+Dans Visual Planning, le rapprochement permet de fusionner une personne créée manuellement avec une personne importée depuis KHEOPS.
 
 .. warning::
     Il faut au maximum planifier et placer des habilitations sur des personnes importées de KHEOPS.
 
     Pour l'instant, une personne créée manuellement ne peut pas avoir de vbadge.
 
-Tous les événements et les informations renseignés dans la fiche de la personne créée manuellement seront transféré sur la personne KHEOPS.
+Tous les événements et les informations renseignées dans la fiche de la personne créée manuellement seront transférés vers la personne importée de KHEOPS.
 
 L'affichage
 -----------
 
-L'affichage est décomposé en 3 vues :
-    - Les personnes créées manuellement de mon secteur
-    - La planning des rapprochements pour faire la demande de rapprochement
-    - Les personnes importées de KHEOPS de mon secteur
+L'affichage s'intitule ``_Gestion des imports KHEOPS`` (dans la partie *Données*).
 
-.. image:: ../_static/fonctionnalitees/rapprochement/affichage_rapprochement.png
+Cet affichage est décomposé en 3 vues :
+    - Les personnes créées manuellement dans mon secteur (à gauche)
+    - La planning (au centre) permettant de générer des événements de "demande de rapporchement"
+    - Les personnes importées automatiquement de KHEOPS dans mon secteur (à droite)
+
+.. image:: ../_static/fonctionnalitees/rapprochement/v7_affichage_rapprochement.png
 
 Le principe
 -----------
 
-Objectif 1 :
-    Lorsqu'une ressource est importées de KHEOPS et que vous l'aviez créée manuellement, vous allez vous retrouver avec un doublon.
-    Il ne faut plus passer le doublon en ``à supprimer`` mais aller chercher l'affichage : ``_Gestion des imports KHEOPS`` et effectuer un rapprochement.
+Lorsqu'une ressource est importée automatiquement de KHEOPS (**et que vous l'aviez déjà créée manuellement**), vous vous retrouvez généralement avec un doublon dans vos affichages (planification, habilitation, ...).
+Pour se débarrasser de ce doublon, nous allons utiliser l'affichage ``_Gestion des imports KHEOPS`` et effectuer un rapprochement (voir plus bas).
 
-Objectif 2 :
-    Il faut vider la vue de gauche (personnes créées manuellement)
-
-Pour se faire vous avez trois choix :
-
-Le rapprochement
-*****************
 .. warning::
-    Quelques règles avant de commencer :
-        - Uniquement les utilisateurs du groupe ``REFERENT`` peuvent placer des événements de rapprochement.
-        - Le rapprochement ``copie`` les informations de la personne créée manuellement et les ``colles`` sur la personne importées de KHEOPS. (**Cela écrase les données existantes dans la fiche de la personnes**)
-            1. Vérifiez qu'il n'y a pas de document ou photo associée à la personne importée de KHEOPS.
-            2. Si c'est le cas et que ces documents ne sont pas sur la personne créée manuellement, sauvegarder les sur votre ordinateur puis venez les réinsérer dans la fiche de la personne après le rapprochement.
-        - Le rapprochement ``coupe`` les événements de la personne créée manuelle et les ``colles`` sur la personne importées de KHEOPS. (**Cela n'écrase pas les événements déjà en place mais ces événements n'existent plus sur la ressource initiale**)
-        - Vérifiez que vous avez bien ``Glissé/Déposé`` une personne créée manuellement pour positioner l'événement de rapprochement et copié l'ID VINCI de la personne importées par KHEOPS. (**Vous risqueriez de perdre les données de la fiche de la personne créée manuellement**)
-        - Utiliser au maximum les filtres rapides :
-            - Les filtres comme : ``Parti \ A supprimer`` peuvent vous aider dans votre tâche
-
-.. note::
-    Il est important de vérifier les règles ci-dessus pour le lancement du processus de rapprochement. Vous avez pus avoir été amené à renseigné des données sur les deux ressources car le rapprochement n'existait pas.
+    Vous aviez peut-être pris l'habitude, jusque-là, de passer une des 2 ressources en ``A supprimer``. Attention, la méthode ``A supprimer`` n'est utile que dans le cas où l'on aurait créé manuellement 2 fois la même personne. 
     
-    A partir d'aujourd'hui et après avoir rapproché tout le personnel possible, ce process est amené à faire le rapprochement des deux ressources dès l'importation de la personne KHEOPS. **Il n'y aura donc aucune données sur la personne KHEOPS**.
+    Pour rappel, si vous souhaitez simplement masquer une ressource (intérimaire en période de carence, personnel sorti des effectifs, ...), utiliser la case à cocher ``Cacher``.
 
-1. Glissez / Déposez la personne créées manuellement de la vue de gauche sur une date sur le planning
-    - Peu importe la date
-    - L'événement est bleu pour vous indiquez qu'il vient d'être créé et qu'il n'a pas encore d'ID VINCI attribué
-
-    .. image:: ../_static/fonctionnalitees/rapprochement/nouveau_rapprochement.png
-
-2. Recherchez la même personne importées de KHEOPS dans la vue de droite
-3. Ouvrez sa fiche pour récupérer son ``ID VINCI``
-
-    .. image:: ../_static/fonctionnalitees/rapprochement/fiche_personnel.png
-
-4. Copiez cet ``ID VINCI`` et copiez le dans le champ ``ID VINCI`` de l'événement
-
-        .. image:: ../_static/fonctionnalitees/rapprochement/ev_rapprochement.png
-
-    .. image:: ../_static/fonctionnalitees/rapprochement/modifie_rapprochement.png
-
-5. Validez (le traitement s'effectura dans les 15min).
-
-Les couleurs indiques ou en est le traitement du rapprochement :
-    - Bleu (Nouveau)
-    - Orange (Modifié)
-    - Rouge (Erreur sur l'évément, vérifier la note ou contactez le service informatique)
-    - Vert (Traité)
-
-    .. image:: ../_static/fonctionnalitees/rapprochement/traite_rapprochement.png
-
-Lorsque l'événement est vert, si vous rechargez la page de gestion des rapprochements, la personne que vous avez rapprocher devrait avoir disparu de la liste de gauche.
-
-Vous pouvez aussi vérifier le avant/après en ouvrant la fiche de la personne créée manuellement puis en allant dans l'onglet ``Paramètres`` pour y voir sa liste d'événements.
-
-    .. image:: ../_static/fonctionnalitees/rapprochement/fiche_personnel_ev.png    
-
-La personne créée manuellement ne devrait plus avoir d'événements et la personne importées devrait les avoir récupérés.
+Objectif :
+    Dans l'affichage ``_Gestion des imports KHEOPS``, le but est de vider au maximum la vue de gauche (liste des personnes créées manuellement). Nous verrons plus bas comment faire.
 
 .. note::
-    La personne dont le rapprochement à été traité n'est pas supprimée, elle est juste marquée comme : ``A supprimer`` pour vérifier que tous c'est bien déroulé comme prévu
+    Vous avez probablement renseigné des données sur les deux personnes (créée et importée) car cette méthode de rapprochement n'existait pas encore. Il est donc important de vérifier les règles ci-dessous avant de lancer le processus de rapprochement.
 
 .. warning::
-    Dans le cas ou vous constatez une erreur dans le rapprochement, contactez le service informatique
+    - Seuls les utilisateurs disposant du droit de ``REFERENT`` peuvent effectuer un rapprochement.
+    - Le processus de rapprochement **copie** les informations de la personne créée manuellement et les **colle** sur la personne importée de KHEOPS. **Cela écrase donc les données existantes dans la fiche de la personne (importée de KHEOPS).**
+        - 0. Si vous n'avez jamais ajouter/modifier d'information sur la personne importée de KHEOPS, vous pouvez passer les étapes 1 et 2.
+        - 1. Vérifier qu'il n'y ait aucun document ou photo à récupérer sur la personne importée de KHEOPS.
+        - 2. Dans le cas contraire, sauvegarder-les sur votre ordinateur puis réinsérer-les **après le rapprochement**.
+    - Le processus de rapprochement **coupe** les événements de la personne créée manuellement et les **colle** sur la personne importée de KHEOPS. **Cela n'écrase pas les événements déjà présents sur la personne importée de KHEOPS.**
+    - Les filtres rapides ``Cacher``, ``A supprimer`` ou ``Sortie KHEOPS`` peuvent vous aider dans votre tâche.
 
-La ressource générique
+[ 1 ] Le rapprochement
 **********************
 
-Une ressource dites générique est une ressource qui n'est pas nominative, elle ne nécessitera donc pas d'être rapprochées.
+1. Glissez / Déposez la personne souhaitée, depuis la vue de gauche, à une date donnée sur le planning :
+    - La date choisie n'a pas d'importance,
+    - L'événement créé est bleu, ce qui indique qu'un nouveau rapprochement a été généré mais de manière incomplète : il manque l'information ``ID VINCI`` permettant de faire le lien avec la personne importée de KHEOPS.
 
-Exemple :
-    - Equipe soudure
-    - Intérimaire 1
-    - Appel d'offre
+    .. image:: ../_static/fonctionnalitees/rapprochement/v7_nouveau_rapprochement_1.png
 
-Dans la fiche de la ressource, vous pouvez cocher la case : ``ressource générique`` qui permettra de faire disparaître la ressource dans la liste de gauche.
+    .. image:: ../_static/fonctionnalitees/rapprochement/v7_nouveau_rapprochement_2.png
 
-.. image:: ../_static/fonctionnalitees/vbadge/editeur_personne_generique.png
+2. Recherchez la même personne (importée de KHEOPS) dans la vue de droite afin de pouvoir lire son ``ID VINCI``.
 
-.. note::
-    Cocher la ressource en ``ressource générique`` ne l'a fait pas disparaître de vos autres affichages. Cela permet de diminuer la liste des ressources à rapprocher pour une meilleur lisibilité.
+3. Ouvrez l'éditeur du rapprochement (double-clic sur l'événement bleu) et recopiez l'``ID VINCI`` (observé dans la liste de droite) dans le champ prévu à cet effet (dans l'éditeur) :
 
-Les intérimaires
-****************
+    .. image:: ../_static/fonctionnalitees/rapprochement/v7_editeur_rapprochement.png
 
-Les intérimaires n'étant pas importé de KHEOPS pour le moment, il n'est pas possible de les rapprocher.
-Les intérimaires ne sont pas affichés dans la partie des ressources créées manuellement.
+    .. image:: ../_static/fonctionnalitees/rapprochement/v7_eve_rapprochement_complet.png
 
-Si un intérimaire apparaît dans la liste, c'est que son ``type de contrat`` dans sa fiche n'est pas positionné sur ``Intérimaire``
-
-.. image:: ../_static/fonctionnalitees/vbadge/editeur_personne_interim.png
+5. Validez (le traitement s'effectura dans un délai de 15 minutes).
 
 .. warning::
-    Dans le cas ou l'intérimaire est embauché par l'entreprise et qu'il est importé par kheops, il vous suffit de changer dans sa fiche son type de contrat intérimaire en CDD ou CDI puis de revenir sur l'affichage pour faire le rapprochement avec son import KHEOPS.
+    Veillez à recopier strictement l'ID VINCI (sans espace avant, ni après) ; dans le cas contraire, il faudra alors répéter l'opération à partir de l'étape 3.
+
+La couleur de l'événement indique où en est le traitement du rapprochement :
+    - Bleu (Nouveau),
+    - Orange (Modifié et prêt à être traité),
+    - Rouge (Erreur sur l'événement, vérifier le message dans la note ou contacter le service informatique),
+    - Vert (Traité).
+
+.. note::
+    Contrairement aux événements de création de ressources, les événements de rapprochement ne disparaissent pas du planning à la fin du traitement.
+    
+    De plus, une fois le rapprochement terminé, la personne (créée manuellement) n'est pas supprimée ; elle est juste marquée ``A supprimer``.
+
+.. warning::
+    Si vous constatez une erreur dans le rapprochement, contactez le service informatique.
+
+[ 2 ] Les ressources génériques
+*******************************
+
+Une **ressource générique** est une ressource qui n'est pas nominative. Elle ne nécessitera donc pas de rapprochement. On les utilise généralement en cas de prestations temporaires mais répétées au cours de l'année. 
+
+Exemple d'utilisation :
+    - Equipe soudure en location (externe au groupe),
+    - Intérimaire (renfort),
+    - Annonceur (prestation de sécurité ferroviaire).
+
+Dans la fiche de la ressource générique (``PERSONNELS``), vous pouvez cocher la case ``Ressource générique``. En procédant ainsi, vous ne verrez plus les ressources génériques dans l'affichage ``_Gestion des imports KHEOPS``.
+
+.. image:: ../_static/fonctionnalitees/rapprochement/v7_parametre_ressource_generique.png
+
+.. note::
+    Cocher la case ``Ressource générique`` ne fait pas disparaître cette ressource de vos autres affichages.
+
+[ 3 ] Les intérimaires
+**********************
+
+Les intérimaires n'étant pas importés de KHEOPS pour le moment, il n'est pas possible de les rapprocher.
+Les intérimaires ne sont pas affichés dans la partie des ressources créées manuellement.
+
+Si un intérimaire apparaît dans cette liste, vérifiez que la rubrique ``Type contrat (SAP)`` (dans sa fiche PERSONNELS) n'est pas positionnée sur ``INTERIM``.
+
+.. image:: ../_static/fonctionnalitees/rapprochement/v7_parametre_type_contrat.png
+
+.. warning::
+    Dans le cas où l'intérimaire est embauché, il vous suffit de changer son type de contrat (``INTERIM`` --> ``CDD`` / ``CDI``) puis de revenir sur l'affichage pour faire le rapprochement avec son import KHEOPS.
