@@ -59,7 +59,7 @@ Enfin, cliquez sur ``Oui`` pour afficher le document puis le sauvegarder sur vot
 Liste des Rapports Soudure
 **************************
 
-[ Dernier onglet ] Cette vue représente l'ensemble des événements de rapports soudure sous forme de liste.
+[ Dernier onglet ] Cette vue représente l'ensemble des événements de rapports soudure/meulage sous forme de liste.
 
 .. image:: ../_static/fonctionnalitees/rapport_soudure/vue_liste_eve_rapports_soudure.png
 
@@ -71,3 +71,17 @@ Une fois la soudure identifiée, faites un clic-droit dessus > ``Echanger/Diffus
 .. image:: ../_static/fonctionnalitees/rapport_soudure/publiposter_rapport.png
 
 Enfin, cliquez sur ``Oui`` pour afficher le document puis le sauvegarder sur votre poste.
+
+
+Extraction Massive de Rapports
+******************************
+
+Pour extraire plusieurs rapports en une seule fois, sélectionnez l'ensemble des rapports soudure OU meulage souhaité.
+
+Puis clique-droit dessus > ``Echanger/Diffuser`` > ``Publiposter`` > ``FOR Rapport Soudure`` OU ``FOR Rapport Meulage``.
+
+Un message apparaît pour ouvrir les fichiers générés : cliquez sur ``Non``.
+
+Enfin, rendez-vous dans votre explorateur de fichiers et accédez à ce dossier ``C:\Rapport Soudure``. 
+Vous y trouverez l'ensemble des soudures/meulages extraits, répartis par chantier. 
+Il vous faudra alors utiliser un utilitaire de PDF (ex : PDF Creator) afin de fusionner les documents.
